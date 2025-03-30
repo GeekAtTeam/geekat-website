@@ -66,6 +66,11 @@ const config: Config = {
   ],
 
   themeConfig: {
+    metadata: [
+      { name: 'keywords', content: '嵌入式,物联网,人工智能,智慧城市,工业自动化,企业解决方案,行业软件,编程培训,创客教育' },
+      {name: 'description', content: '历经10年嵌入式领域深耕，极客艾特团队用代码编织现实与数字世界的桥梁，让技术创新成为企业进化的 DNA。'},
+      {name: 'author', content: '广州极客艾特计算机系统有限公司'}
+    ],
     // Replace with your project's social card
     image: 'img/geekat-social-card.png',
     navbar: {
