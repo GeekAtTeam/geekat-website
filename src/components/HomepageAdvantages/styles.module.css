@@ -1,0 +1,27 @@
+.advantages {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.advantageSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.advantageImage {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.advantageImage:hover {
+  transform: scale(1.1);
+}
+
+.advantageDescription {
+  text-align: left;
+}

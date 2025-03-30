@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Geek @',
   tagline: '让智能技术回归价值本质',
-  favicon: 'img/geekat-logo-brown-circle.png',
+  favicon: 'img/favicon.png',
 
   // Set the production url of your site here
   url: 'https://geekat.cn',
@@ -17,7 +17,7 @@ const config: Config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'GeekAtTeam', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -84,7 +84,7 @@ const config: Config = {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: '产品方案',
         },
         {to: '/news', label: '新闻资讯', position: 'left'},
         // {
@@ -127,8 +127,8 @@ const config: Config = {
           title: '社交媒体',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/geekat',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/106403521',
             },
             {
               label: 'Discord',

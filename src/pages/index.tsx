@@ -3,8 +3,13 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
+import HomepageAdvantages from '@site/src/components/HomepageAdvantages';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import SpaceBackground from '@site/src/components/SpaceBackground';
+// import TestCube from '@site/src/components/TestCube';
+import TypingEffect from '@site/src/components/TypingEffect';
+import TypingOverlay from '@site/src/components/TypingOverlay';
 
 import styles from './index.module.css';
 
@@ -35,9 +40,71 @@ export default function Home(): ReactNode {
     <Layout
       title={`首页 ${siteConfig.title}`}
       description="广州极客艾特计算机系统有限公司，让智能技术回归价值本质！">
-      <HomepageHeader />
+      
+      {/* <SpaceBackground /> */}
+      {/* <div style={{ border: '2px solid red' }}>
+        <SpaceBackground />
+      </div> */}
+      <div style={{ 
+        // border: '2px solid red',
+        height: '100vh', // 关键修复：设置视口高度
+        position: 'relative', // 确保子元素定位基准
+        overflow: 'hidden'
+        }}>
+          <SpaceBackground />
+
+          {/* 打字机效果文字 */}
+          <TypingOverlay 
+            phrases={[
+              "极客艾特 Geek@",
+              "让智能技术回归价值本质",
+              "用极客精神创造社会价值"
+            ]}
+            typingSpeed={80}
+            deletingSpeed={40}
+            pauseDuration={2000}
+          />
+
+          {/* 其他内容（按钮等） */}
+          <div style={{ 
+            position: 'absolute',
+            bottom: '20%',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 2
+          }}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro">
+              开始探索 🛰
+            </Link>
+          </div>
+      </div>
+
+      {/* <TypingEffect
+        texts={[
+          "让智能技术回归价值本质",
+          "创新驱动未来",
+          "科技创造无限可能"
+        ]}
+        speed={80}
+        loop={true}
+        cursor={true}
+      /> */}
+
+      {/* <HomepageHeader /> */}
+
+      {/* <TestCube /> */}
       <main>
+        <h2 className='home-title'>业务版图</h2>
         <HomepageFeatures />
+        <h2 className='home-title'>核心优势</h2>
+        <HomepageAdvantages />
+        <img
+          src={require('@site/static/img/geekat-business.webp').default}
+          alt="极客艾特覆盖行业解决方案"
+          className={styles.topBanner}
+        />
       </main>
     </Layout>
   );

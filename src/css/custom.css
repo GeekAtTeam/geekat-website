@@ -17,16 +17,97 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+:root {
+  /* 核心主色 (蓝色系) */
+  --ifm-color-primary: #2b6cb0;
+  --ifm-color-primary-dark: #2c5282;
+  --ifm-color-primary-darker: #2a4365;
+  --ifm-color-primary-darkest: #1a365d;
+  --ifm-color-primary-light: #4299e1;
+  --ifm-color-primary-lighter: #63b3ed;
+  --ifm-color-primary-lightest: #90cdf4;
+
+  /* 背景颜色 (灰色系) */
+  --ifm-background-color: #f7fafc;
+  --ifm-navbar-background-color: #edf2f7;
+  --ifm-footer-background-color: #2d3748;
+  --ifm-card-background-color: #fff;
+
+  /* 文本颜色 */
+  --ifm-font-color-base: #2d3748;
+  --ifm-font-color-base-inverse: #e2e8f0;
+  --ifm-heading-color: var(--ifm-font-color-base);
+
+  /* 链接与交互 */
+  --ifm-link-color: #3182ce;
+  --ifm-link-hover-color: #2b6cb0;
+  --ifm-menu-color-active: var(--ifm-color-primary);
+  
+  /* 代码区块 */
+  --ifm-code-font-size: 95%;
+  --ifm-code-background: #f7fafc;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* 按钮 */
+  --ifm-button-background-color: var(--ifm-color-primary);
+  --ifm-button-color: #fff;
+  --ifm-button-border-color: transparent;
+
+  /* 边框 */
+  --ifm-border-color: #cbd5e0;
+}
+
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  /* 核心主色 (更亮蓝色) */
+  --ifm-color-primary: #63b3ed;
+  --ifm-color-primary-dark: #4299e1;
+  --ifm-color-primary-darker: #3182ce;
+  --ifm-color-primary-darkest: #2b6cb0;
+  --ifm-color-primary-light: #90cdf4;
+  --ifm-color-primary-lighter: #bee3f8;
+  --ifm-color-primary-lightest: #ebf8ff;
+
+  /* 深色背景 */
+  --ifm-background-color: #1a202c;
+  --ifm-navbar-background-color: #2d3748;
+  --ifm-footer-background-color: #171923;
+  --ifm-card-background-color: #2d3748;
+
+  /* 浅色文本 */
+  --ifm-font-color-base: #e2e8f0;
+  --ifm-font-color-base-inverse: #2d3748;
+  
+  /* 链接与交互 */
+  --ifm-link-color: #63b3ed;
+  --ifm-link-hover-color: #90cdf4;
+  --ifm-menu-color-active: var(--ifm-color-primary-light);
+
+  /* 代码区块 */
+  --ifm-code-background: rgba(26, 32, 44, 0.8);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  /* 按钮 */
+  --ifm-button-background-color: var(--ifm-color-primary);
+  --ifm-button-color: var(--ifm-font-color-base);
+
+  /* 边框 */
+  --ifm-border-color: #4a5568;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
 }
 
 img[src*='#center'] {
@@ -89,4 +170,10 @@ img[src*='#center-100'] {
   margin: auto;
   width: 100px;
   border-radius: 4px;
+}
+
+.home-title {
+  text-align: center;
+  margin-top: 20px;
+  padding: 32px;
 }

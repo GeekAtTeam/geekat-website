@@ -5,14 +5,49 @@
   width: 100%;
 }
 
+@media (max-width: 996px) {
+  .featureItem {
+    padding: 1rem;
+  }
+  
+  .featureImage {
+    width: 96px;
+    height: 96px;
+  }
+}
+
 .featureSvg {
   height: 200px;
   width: 200px;
 }
 
 .featureImage {
-  width: 200px;
-  height: 200px;
+  width: 128px;
+  height: 128px;
   object-fit: contain;
+  margin-bottom: 2rem;
+}
+
+.featureImage:hover {
+  transform: scale(1.1);
+}
+
+.featureDescription {
+  text-align: left;
+  padding-left: 5rem;
+}
+
+.content {
+  text-align: left;
+}
+
+.title {
+  font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: var(--ifm-color-primary);
+}
+
+.description {
+  line-height: 1.6;
+  font-size: 0.9rem;
 }

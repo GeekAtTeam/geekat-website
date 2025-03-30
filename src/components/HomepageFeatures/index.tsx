@@ -16,12 +16,12 @@ const FeatureList: FeatureItem[] = [
       <img 
         src={require('@site/static/img/embedded-icon.png').default}
         alt="智能硬件开发"
-        className="featureImage"
+        className={styles.featureImage}
       />
     ),
     description: (
-      <div className="featureDescription">
-        嵌入式系统定制开发<br/>边缘计算设备研发<br/>传感器融合解决方案
+      <div className={styles.featureDescription}>
+        ✅ 嵌入式系统定制开发<br/>✅ 边缘计算设备研发<br/>✅ 传感器融合解决方案
       </div>
     ),
   },
@@ -31,12 +31,12 @@ const FeatureList: FeatureItem[] = [
       <img 
         src={require('@site/static/img/digital-icon.png').default}
         alt="数字化产品构建"
-        className="featureImage"
+        className={styles.featureImage}
       />
     ),
     description: (
-      <div className="featureDescription">
-        企业级中间件开发<br/>跨平台App/小程序开发<br/>微服务架构设计与实施
+      <div className={styles.featureDescription}>
+        ✅ 企业级中间件开发<br/>✅ 跨平台App/小程序开发<br/>✅ 微服务架构设计与实施
       </div>
     ),
   },
@@ -46,12 +46,12 @@ const FeatureList: FeatureItem[] = [
       <img 
         src={require('@site/static/img/quality-icon.png').default}
         alt="技术赋能计划"
-        className="featureImage"
+        className={styles.featureImage}
       />
     ),
     description: (
-      <div className="featureDescription">
-        嵌入式开发实战培训<br/>物联网架构师认证<br/>企业技术转型咨询
+      <div className={styles.featureDescription}>
+        ✅ 嵌入式开发实战培训<br/>✅ 物联网架构师认证<br/>✅ 企业技术转型咨询
       </div>
     ),
   },
@@ -65,7 +65,7 @@ function Feature({title, Svg, description}: FeatureItem) {
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        <div>{description}</div>
       </div>
     </div>
   );

@@ -1,0 +1,31 @@
+.typingContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* 确保在太空背景上方 */
+    text-align: center;
+}
+  
+.text {
+    color: #fff;
+    font-size: 2.5rem;
+    font-family: 'Courier New', monospace;
+    text-shadow: 
+      0 0 10px rgba(255,255,255,0.5),
+      0 0 20px rgba(0,255,255,0.5);
+}
+  
+.cursor {
+    display: inline-block;
+    width: 3px;
+    height: 1em;
+    background: #00ff9d;
+    margin-left: 3px;
+    animation: blink 0.7s infinite;
+}
+  
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
