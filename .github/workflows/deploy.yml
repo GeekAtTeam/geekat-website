@@ -1,0 +1,30 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # 监听 main 分支的 push 事件
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20  # 指定 Node.js 版本
+
+      - name: Install dependencies
+        run: yarn install  # 或 npm install
+
+      - name: Build Docusaurus
+        run: yarn build    # 生成 build 目录
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # 自动使用 GitHub Token
+          publish_dir: ./build  # 指定构建目录
+          publish_branch: gh-pages  # 部署到 gh-pages 分支
