@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgeekat_website=self.webpackChunkgeekat_website||[]).push([[248],{6655:e=>{e.exports=JSON.parse('{"tags":[{"label":"GeekAt","permalink":"/news/tags/geekat","description":"GeekAt tag description","count":1}]}')}}]);
