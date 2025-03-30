@@ -172,6 +172,11 @@ const config: Config = {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
+    colorMode: {
+      defaultMode: 'dark', // 默认主题设为深色
+      disableSwitch: false, // 是否隐藏切换按钮（保持显示）
+      respectPrefersColorScheme: true, // 不跟随系统主题
+    },
   } satisfies Preset.ThemeConfig,
 };
 
