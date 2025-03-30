@@ -1,4 +1,4 @@
-# Website
+# GeekAt Website
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
@@ -39,3 +39,9 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+## MDX
+
+- [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features)
+- [MDX](https://mdxjs.com/)
+ 

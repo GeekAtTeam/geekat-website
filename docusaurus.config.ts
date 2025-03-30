@@ -114,12 +114,24 @@ const config: Config = {
           title: '产品方案',
           items: [
             {
-              label: 'XXX',
-              to: '/docs/intro',
+              label: '智能语音聊天机器人',
+              to: '/',
             },
             {
-              label: 'YYY',
-              to: '/news',
+              label: '无人值守自动称重系统',
+              to: '/',
+            },
+            {
+              label: '空气质量监测系统',
+              to: '/',
+            },
+            {
+              label: '花园自动浇灌系统',
+              to: '/',
+            },
+            {
+              label: '智能厨余堆肥机',
+              to: '/',
             },
           ],
         },
