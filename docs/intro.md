@@ -1,4 +1,5 @@
 ---
+title: 产品中心
 sidebar_position: 1
 ---
 

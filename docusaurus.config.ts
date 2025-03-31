@@ -43,6 +43,7 @@ const config: Config = {
             'https://github.com/GeekAtTeam/geekat-website/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogTitle: 'News',
           routeBasePath: 'news',
           showReadingTime: true,
           feedOptions: {
