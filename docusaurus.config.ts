@@ -65,6 +65,10 @@ const config: Config = {
     ],
   ],
 
+  scripts: [
+    {src: 'https://hm.baidu.com/hm.js?50f5b28c22dcd8c42706077e9d2ea7c0', async: true},
+  ],
+
   themeConfig: {
     metadata: [
       { name: 'keywords', content: '嵌入式,物联网,人工智能,智慧城市,工业自动化,企业解决方案,行业软件,编程培训,创客教育' },
