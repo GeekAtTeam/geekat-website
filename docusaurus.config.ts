@@ -7,7 +7,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Geek @',
   tagline: '让智能技术回归价值本质',
-  favicon: 'img/favicon.png',
+  favicon: 'img/favicon.svg',
 
   // Set the production url of your site here
   url: 'https://geekat.cn',
