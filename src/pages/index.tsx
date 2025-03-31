@@ -38,7 +38,8 @@ export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`首页 ${siteConfig.title}`}
+      // title={`首页 ${siteConfig.title}`}
+      title="首页"
       description="广州极客艾特计算机系统有限公司，让智能技术回归价值本质！">
       
       {/* <SpaceBackground /> */}

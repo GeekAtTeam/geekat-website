@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Geek @',
+  title: '极客艾特 Geek@',
   tagline: '让智能技术回归价值本质',
   favicon: 'img/favicon.svg',
 
@@ -71,8 +71,8 @@ const config: Config = {
 
   themeConfig: {
     metadata: [
-      { name: 'keywords', content: '嵌入式,物联网,人工智能,智慧城市,工业自动化,企业解决方案,行业软件,编程培训,创客教育' },
-      {name: 'description', content: '历经10年嵌入式领域深耕，极客艾特团队用代码编织现实与数字世界的桥梁，让技术创新成为企业进化的 DNA。'},
+      { name: 'keywords', content: '极客艾特,GeekAt,Geek@,嵌入式,物联网,人工智能,智慧城市,工业自动化,企业解决方案,行业软件,编程培训,创客教育' },
+      {name: 'description', content: '极客艾特（GeekAt）全称是“广州极客艾特计算机系统有限公司”，成立于2025年2月7日，目前是一家一人公司，主要业务包括智能硬件开发（嵌入式系统）、数字化产品构建（中间件、网站、App、小程序、解决方案），以及技术培训和 STEM 编程教育。'},
       {name: 'author', content: '广州极客艾特计算机系统有限公司'}
     ],
     // Replace with your project's social card
