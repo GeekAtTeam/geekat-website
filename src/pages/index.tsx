@@ -76,7 +76,7 @@ export default function Home(): ReactNode {
           }}>
             <Link
               className="button button--secondary button--lg"
-              to="/docs/intro">
+              to="/products">
               开始探索 🛰
             </Link>
           </div>

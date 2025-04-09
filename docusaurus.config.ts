@@ -39,8 +39,8 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/GeekAtTeam/geekat-website/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+            // 'https://github.com/GeekAtTeam/geekat-website/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           blogTitle: 'News',
@@ -52,8 +52,8 @@ const config: Config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/GeekAtTeam/geekat-website/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+            // 'https://github.com/GeekAtTeam/geekat-website/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -63,6 +63,20 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'products',
+        path: 'products',
+        routeBasePath: 'products',
+        sidebarPath: require.resolve('./sidebars.ts'),
+        // ... other options
+        exclude: ['BACKLOG.md', 'SUMMARY.md', '*/README.md'],
+      },
     ],
   ],
 
@@ -106,8 +120,8 @@ const config: Config = {
           title: '推荐阅读',
           items: [
             {
-              label: '技术手册',
-              to: '/docs/intro',
+              label: '产品中心',
+              to: '/products',
             },
             {
               label: '新闻资讯',
