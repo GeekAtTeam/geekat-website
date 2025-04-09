@@ -99,12 +99,13 @@ const config: Config = {
         src: 'img/geekat-logo.png',
       },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: '产品方案',
-        },
+        // {
+        //   type: 'docSidebar',
+        //   sidebarId: 'tutorialSidebar',
+        //   position: 'left',
+        //   label: '产品方案',
+        // },
+        {to: '/products', label: '产品方案', position: 'left'},
         {to: '/news', label: '新闻资讯', position: 'left'},
         // {
         //   href: 'https://github.com/GeekAtTeam',
