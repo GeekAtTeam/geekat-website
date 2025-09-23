@@ -1,47 +1,82 @@
-# GeekAt Website
+# 极客艾特 GeekAt
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+我们相信，真正的技术应该像空气般自然融入生活。历经10年嵌入式领域深耕，极客艾特团队用代码编织现实与数字世界的桥梁，让技术创新成为企业进化的 DNA。
 
-### Installation
+## 关于我们
+
+**极客艾特（GeekAt）** 全称是"广州极客艾特计算机系统有限公司"，成立于2025年2月7日，目前是一家一人公司，主要业务包括：
+
+- **智能硬件开发**：嵌入式系统定制开发、边缘计算设备研发、传感器融合解决方案
+- **数字化产品构建**：企业级中间件开发、跨平台App/小程序开发、微服务架构设计与实施
+- **技术赋能计划**：嵌入式开发实战培训、物联网架构师认证、企业技术转型咨询
+
+### 核心优势
+
+- **硬核技术基底**：累计完成 120+ 嵌入式项目，核心成员拥有 ARM/RTOS 领域认证
+- **全栈开发能力**：从芯片级开发到云端部署，提供 IoT 领域端到端解决方案
+- **敏捷交付体系**：独创"蜂巢开发模型"，确保项目交付准时率超 98%
+- **行业理解深度**：服务覆盖智能家居、工业物联网、智能驾驶、智慧农业、智慧医疗、智慧城市、能源管理、STEM 创客教育等八大垂直领域
+
+### 技术理念
+
+我们执着于"毫米级优化" —— 从降低 1ms 的响应延时，到精简 1KB 的内存占用。这种极致追求让我们在智慧停车场项目中实现 99.99% 的车牌识别准确率，在工业监测场景达成 20000+ 小时无故障运行。
+
+### 客户承诺
+
+- 每行代码都经三重质量验证
+- 每个方案必含可演进技术架构
+- 每次交付必有详细技术文档传承
+
+### 未来愿景
+
+正在构建开放的 IoT 开发者生态，与行业伙伴共同探索人机协同的下一站。期待与您携手，用硬核技术点燃商业创新的星辰大海。
+
+---
+
+## 项目构建说明
+
+本网站使用 [Docusaurus](https://docusaurus.io/) 构建，这是一个现代化的静态网站生成器。
+
+### 安装依赖
 
 ```
 $ yarn
 ```
 
-### Local Development
+### 本地开发
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+此命令将启动本地开发服务器并打开浏览器窗口。大多数更改都会实时反映，无需重启服务器。
 
-### Build
+### 构建项目
 
 ```
 $ yarn build
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+此命令将静态内容生成到 `build` 目录中，可以使用任何静态内容托管服务进行部署。
 
-### Deployment
+### 部署
 
-Using SSH:
+使用 SSH：
 
 ```
 $ USE_SSH=true yarn deploy
 ```
 
-Not using SSH:
+不使用 SSH：
 
 ```
 $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+如果您使用 GitHub Pages 进行托管，此命令是构建网站并推送到 `gh-pages` 分支的便捷方式。
 
-## MDX
+## MDX 文档
 
-- [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features)
+- [Docusaurus Markdown 功能](https://docusaurus.io/docs/markdown-features)
 - [MDX](https://mdxjs.com/)
  
