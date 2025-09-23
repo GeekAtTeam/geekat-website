@@ -1,0 +1,34 @@
+{
+  "id": "smart-compost-machine",
+  "name": "智能厨余堆肥机",
+  "category": "环保科技",
+  "description": "高效智能厨余堆肥机，采用微生物发酵技术，24小时快速分解厨余垃圾，产出优质有机肥料，实现厨余垃圾的循环利用。",
+  "image": "/img/products/smart-compost-machine.jpg",
+  "price": "¥2099起",
+  "status": "已发布",
+  "features": [
+    "24小时快速分解",
+    "微生物发酵技术",
+    "智能温度控制",
+    "除臭过滤系统",
+    "手机APP监控"
+  ],
+  "specifications": {
+    "处理能力": "3-5kg/天",
+    "分解时间": "24小时",
+    "肥料产出率": "85%",
+    "工作温度": "45-65°C",
+    "功耗": "< 50W",
+    "噪音": "< 40dB"
+  },
+  "downloads": [
+    {
+      "name": "产品手册.pdf",
+      "url": "/downloads/smart-compost-machine-manual.pdf"
+    },
+    {
+      "name": "使用指南.pdf",
+      "url": "/downloads/smart-compost-machine-guide.pdf"
+    }
+  ]
+}

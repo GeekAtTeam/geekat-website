@@ -67,8 +67,8 @@ const config: Config = {
   ],
 
   plugins: [
-    // 自定义产品插件 - 暂时禁用
-    // require.resolve('./plugins/products-plugin.js'),
+    // 自定义产品插件
+    require.resolve('./plugins/products-plugin.js'),
   ],
 
   scripts: [
