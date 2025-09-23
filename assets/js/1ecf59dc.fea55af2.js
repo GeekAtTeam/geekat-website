@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgeekat_website=self.webpackChunkgeekat_website||[]).push([[2307],{1729:e=>{e.exports=JSON.parse('{"name":"products-plugin","id":"default"}')}}]);
