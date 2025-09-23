@@ -1,0 +1,54 @@
+{
+  "name": "南瓜派系列开发板",
+  "description": "基于STM32MP1主控器的开源硬件开发板，运行Linux系统，类似于树莓派。适用于物联网、边缘计算、工业控制等应用场景。",
+  "category": "开源硬件",
+  "price": "¥199起",
+  "status": "已发布",
+  "image": "/img/products/pumpkin-pi.jpg",
+  "features": [
+    "STM32MP157C主控器，双核ARM Cortex-A7 + 单核Cortex-M4",
+    "1GB DDR3L内存，8GB eMMC存储",
+    "支持WiFi 802.11 b/g/n和蓝牙4.2",
+    "丰富的GPIO接口和扩展引脚",
+    "支持多种操作系统：Linux、FreeRTOS",
+    "完整的开源硬件文档和SDK",
+    "兼容Arduino和树莓派扩展板",
+    "工业级温度范围：-40°C到+85°C"
+  ],
+  "specifications": {
+    "主控器": "STM32MP157C (双核Cortex-A7 @ 800MHz + 单核Cortex-M4 @ 209MHz)",
+    "内存": "1GB DDR3L-1066",
+    "存储": "8GB eMMC + MicroSD卡槽",
+    "网络": "WiFi 802.11 b/g/n + 蓝牙4.2 + 以太网",
+    "GPIO": "40个GPIO引脚",
+    "接口": "USB 2.0 × 2, USB-C, HDMI, 3.5mm音频, 摄像头接口, LCD接口",
+    "电源": "5V/2A (USB-C或GPIO)",
+    "尺寸": "85mm × 56mm",
+    "工作温度": "-40°C ~ +85°C",
+    "操作系统": "Linux (Ubuntu/Debian), FreeRTOS",
+    "开发环境": "STM32CubeIDE, OpenSTLinux SDK",
+    "扩展性": "兼容Arduino Shield, 树莓派HAT"
+  },
+  "downloads": [
+    {
+      "name": "硬件手册.pdf",
+      "url": "/downloads/pumpkin-pi-hardware-manual.pdf"
+    },
+    {
+      "name": "快速入门指南.pdf", 
+      "url": "/downloads/pumpkin-pi-quickstart-guide.pdf"
+    },
+    {
+      "name": "SDK开发包.zip",
+      "url": "/downloads/pumpkin-pi-sdk.zip"
+    },
+    {
+      "name": "原理图.pdf",
+      "url": "/downloads/pumpkin-pi-schematic.pdf"
+    },
+    {
+      "name": "Linux镜像.img",
+      "url": "/downloads/pumpkin-pi-linux-image.img"
+    }
+  ]
+}
