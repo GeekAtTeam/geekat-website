@@ -77,7 +77,7 @@
   --ifm-card-background-color: #111111;
 
   /* 极客风格文本 */
-  --ifm-font-color-base: #a78bfa;
+  --ifm-font-color-base: #e5e7eb;
   --ifm-font-color-base-inverse: #0a0a0a;
   
   /* 链接与交互 */
@@ -218,7 +218,7 @@
 
 /* 终端风格下划线效果 - Dark模式 */
 [data-theme='dark'] .navbar__link::before {
-  content: '> ';
+  content: '';
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -237,7 +237,7 @@
 
 /* 终端风格下划线效果 - Light模式 */
 .navbar__link::before {
-  content: '> ';
+  content: '';
   opacity: 0;
   transition: opacity 0.3s ease;
 }
@@ -255,7 +255,7 @@
 }
 
 [data-theme='dark'] .navbar__link:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 [data-theme='dark'] .navbar__link:hover::after {
@@ -310,6 +310,8 @@
   position: relative;
   overflow: hidden;
 }
+
+/* 产品详情页按钮样式现在由CSS模块处理 */
 
 .button--secondary::before {
   content: '';
@@ -458,11 +460,11 @@ img[src*='#center-100'] {
 }
 
 [data-theme='dark'] .footer__title {
-  color: #a78bfa !important;
+  color: #e5e7eb !important;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-shadow: 0 0 5px rgba(167, 139, 250, 0.5);
+  text-shadow: none;
   margin-bottom: 1rem;
 }
 
@@ -476,7 +478,7 @@ img[src*='#center-100'] {
 }
 
 [data-theme='dark'] .footer__link-item {
-  color: #a78bfa !important;
+  color: #d1d5db !important;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -500,33 +502,33 @@ img[src*='#center-100'] {
 }
 
 [data-theme='dark'] .footer__link-item::before {
-  content: '> ';
+  content: '';
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 .footer__link-item::before {
-  content: '> ';
+  content: '';
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
 [data-theme='dark'] .footer__link-item:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 .footer__link-item:hover::before {
-  opacity: 1;
+  opacity: 0;
 }
 
 [data-theme='dark'] .footer__copyright {
-  color: #a78bfa !important;
+  color: #9ca3af !important;
   font-family: 'Courier New', 'Monaco', monospace;
   text-align: center;
   border-top: 1px solid rgba(167, 139, 250, 0.3);
   padding-top: 2rem;
   margin-top: 2rem;
-  text-shadow: 0 0 5px rgba(167, 139, 250, 0.3);
+  text-shadow: none;
 }
 
 .footer__copyright {
@@ -541,7 +543,7 @@ img[src*='#center-100'] {
 
 /* 极客风格分隔线 */
 [data-theme='dark'] .footer__links {
-  border-bottom: 1px solid rgba(167, 139, 250, 0.2);
+  border-bottom: 1px solid rgba(229, 231, 235, 0.2);
   padding-bottom: 2rem;
 }
 
@@ -567,6 +569,134 @@ img[src*='#center-100'] {
 
 .footer__link-item:hover svg {
   filter: drop-shadow(0 0 4px rgba(124, 58, 237, 0.6));
+}
+
+/* Dark模式文字颜色规则 */
+/* 所有段落文字为灰白色 */
+[data-theme='dark'] p,
+[data-theme='dark'] span,
+[data-theme='dark'] div,
+[data-theme='dark'] td,
+[data-theme='dark'] th,
+[data-theme='dark'] label,
+[data-theme='dark'] .text--secondary,
+[data-theme='dark'] .text--muted {
+  color: #e5e7eb !important;
+}
+
+/* 所有列表项文字为灰白色 */
+[data-theme='dark'] li,
+[data-theme='dark'] ul,
+[data-theme='dark'] ol {
+  color: #e5e7eb !important;
+}
+
+/* 加粗文字为紫色 */
+[data-theme='dark'] strong,
+[data-theme='dark'] b,
+[data-theme='dark'] .font-weight--bold,
+[data-theme='dark'] .text--bold {
+  color: #a78bfa !important;
+  font-weight: bold;
+}
+
+/* 标题保持原有颜色（H1-H6保持紫色） */
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: #a78bfa !important;
+}
+
+/* 特殊标题样式 - 紫色背景上的白色文字 */
+/* Dark模式 */
+[data-theme='dark'] .home-title,
+[data-theme='dark'] .home-title h1,
+[data-theme='dark'] .home-title h2,
+[data-theme='dark'] .home-title h3,
+[data-theme='dark'] .home-title h4,
+[data-theme='dark'] .home-title h5,
+[data-theme='dark'] .home-title h6,
+[data-theme='dark'] .pageTitle,
+[data-theme='dark'] .pageTitle h1,
+[data-theme='dark'] .pageTitle h2,
+[data-theme='dark'] .pageTitle h3,
+[data-theme='dark'] .pageTitle h4,
+[data-theme='dark'] .pageTitle h5,
+[data-theme='dark'] .pageTitle h6 {
+  color: #ffffff !important;
+}
+
+/* Light模式 - 确保紫色背景上的文字也是白色 */
+.home-title,
+.home-title h1,
+.home-title h2,
+.home-title h3,
+.home-title h4,
+.home-title h5,
+.home-title h6 {
+  color: #ffffff !important;
+}
+
+/* 产品中心页面标题 - 覆盖CSS模块样式 */
+/* 使用通配符匹配CSS模块生成的哈希化类名 */
+[class*="pageTitle"],
+h1[class*="pageTitle"],
+h2[class*="pageTitle"],
+h3[class*="pageTitle"],
+h4[class*="pageTitle"],
+h5[class*="pageTitle"],
+h6[class*="pageTitle"] {
+  color: #ffffff !important;
+}
+
+/* Dark模式下的产品中心页面标题 */
+[data-theme='dark'] [class*="pageTitle"],
+[data-theme='dark'] h1[class*="pageTitle"],
+[data-theme='dark'] h2[class*="pageTitle"],
+[data-theme='dark'] h3[class*="pageTitle"],
+[data-theme='dark'] h4[class*="pageTitle"],
+[data-theme='dark'] h5[class*="pageTitle"],
+[data-theme='dark'] h6[class*="pageTitle"] {
+  color: #ffffff !important;
+}
+
+/* 确保所有其他文字元素为灰白色 */
+[data-theme='dark'] blockquote,
+[data-theme='dark'] cite,
+[data-theme='dark'] small,
+[data-theme='dark'] sub,
+[data-theme='dark'] sup,
+[data-theme='dark'] .card,
+[data-theme='dark'] .card__body,
+[data-theme='dark'] .card__content,
+[data-theme='dark'] .container,
+[data-theme='dark'] .row,
+[data-theme='dark'] .col {
+  color: #e5e7eb !important;
+}
+
+/* 特殊情况：加粗的段落或div中的文字 */
+[data-theme='dark'] p strong,
+[data-theme='dark'] div strong,
+[data-theme='dark'] li strong,
+[data-theme='dark'] span strong {
+  color: #a78bfa !important;
+}
+
+/* 表格文字 */
+[data-theme='dark'] table,
+[data-theme='dark'] table td,
+[data-theme='dark'] table th {
+  color: #e5e7eb !important;
+}
+
+[data-theme='dark'] table th,
+[data-theme='dark'] table thead th {
+  color: #a78bfa !important;
+  font-weight: bold;
 }
 
 /* 极客风格全局文本 */

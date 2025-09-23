@@ -96,7 +96,7 @@ const config: Config = {
         //   position: 'left',
         //   label: '产品方案',
         // },
-        {to: '/products', label: '产品方案', position: 'left'},
+        {to: '/products', label: '产品中心', position: 'left'},
         {to: '/news', label: '新闻资讯', position: 'left'},
         // {
         //   href: 'https://github.com/GeekAtTeam',

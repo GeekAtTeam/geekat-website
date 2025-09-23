@@ -34,6 +34,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 [data-theme='dark'] .productCard {
@@ -122,4 +123,54 @@
 
 [data-theme='dark'] .price {
   color: #10b981;
+}
+
+/* 响应式布局调整 - 产品卡片列数控制 */
+
+/* 默认样式 - 桌面端 (1200px+) - 3列 */
+@media screen and (min-width: 1200px) {
+  :global(.col--4) {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
+
+/* 大屏幕平板/小桌面 (992px - 1199px) - 3列 */
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  :global(.col--4) {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
+
+/* iPad 横屏 (1024px - 1199px) - 3列 */
+@media screen and (min-width: 1024px) and (max-width: 1199px) and (orientation: landscape) {
+  :global(.col--4) {
+    flex: 0 0 33.333333% !important;
+    max-width: 33.333333% !important;
+  }
+}
+
+/* iPad 竖屏 (768px - 1023px) - 2列 */
+@media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  :global(.col--4) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* 小屏幕平板 (768px - 991px) - 2列 */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  :global(.col--4) {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+}
+
+/* 手机端 (小于768px) - 1列 */
+@media screen and (max-width: 767px) {
+  :global(.col--4) {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
 }
