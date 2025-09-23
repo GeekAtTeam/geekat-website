@@ -33,49 +33,191 @@
 
 ---
 
-## 项目构建说明
+## 🚀 项目构建说明
 
 本网站使用 [Docusaurus](https://docusaurus.io/) 构建，这是一个现代化的静态网站生成器。
 
-### 安装依赖
+### 📦 安装依赖
 
-```
-$ yarn
+```bash
+npm install
+# 或者
+yarn install
 ```
 
-### 本地开发
+### 🛠️ 本地开发
 
-```
-$ yarn start
+```bash
+npm start
+# 或者
+yarn start
 ```
 
 此命令将启动本地开发服务器并打开浏览器窗口。大多数更改都会实时反映，无需重启服务器。
 
-### 构建项目
+### 🏗️ 构建项目
 
-```
-$ yarn build
+```bash
+npm run build
+# 或者
+yarn build
 ```
 
 此命令将静态内容生成到 `build` 目录中，可以使用任何静态内容托管服务进行部署。
 
-### 部署
+### 🚀 部署
 
 使用 SSH：
 
-```
-$ USE_SSH=true yarn deploy
+```bash
+USE_SSH=true npm run deploy
+# 或者
+USE_SSH=true yarn deploy
 ```
 
 不使用 SSH：
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
+```bash
+GIT_USER=<Your GitHub username> npm run deploy
+# 或者
+GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 如果您使用 GitHub Pages 进行托管，此命令是构建网站并推送到 `gh-pages` 分支的便捷方式。
 
-## MDX 文档
+---
+
+## 🛍️ 产品管理系统
+
+本网站集成了强大的产品管理系统，可以轻松管理上百种产品。
+
+### 📁 产品数据结构
+
+产品数据存储在 `products/` 目录下的 JSON 文件中：
+
+```
+products/
+├── smart-voice-chatbot.json     # 智能语音聊天机器人
+├── auto-weighing-system.json    # 无人值守自动称重系统
+├── air-quality-monitor.json     # 空气质量监测系统
+└── ...                         # 更多产品文件
+```
+
+### 📝 产品数据格式
+
+每个产品 JSON 文件包含以下字段：
+
+```json
+{
+  "id": "产品唯一标识",
+  "name": "产品名称",
+  "category": "产品分类",
+  "description": "产品描述",
+  "image": "产品图片路径",
+  "price": "价格信息",
+  "status": "产品状态",
+  "features": ["特性1", "特性2"],
+  "specifications": {
+    "规格名": "规格值"
+  },
+  "downloads": [
+    {
+      "name": "文件名",
+      "url": "下载链接"
+    }
+  ]
+}
+```
+
+### 🔄 更新产品页面
+
+当修改了产品的 JSON 文件后，需要重新构建网站来更新页面：
+
+```bash
+# 停止开发服务器（如果在运行）
+Ctrl + C
+
+# 重新构建项目
+npm run build
+
+# 重新启动开发服务器查看效果
+npm start
+```
+
+### 🆕 添加新产品
+
+#### 方法一：使用交互式脚本（推荐）
+
+```bash
+npm run add-product
+```
+
+这个命令会引导你填写产品信息，自动生成产品 JSON 文件。
+
+#### 方法二：手动创建
+
+1. 在 `products/` 目录创建新的 JSON 文件
+2. 按照上述数据格式填写产品信息
+3. 将产品图片放在 `static/img/products/` 目录
+4. 重新构建网站
+
+### 📊 产品管理命令
+
+```bash
+# 添加新产品
+npm run add-product
+
+# 查看产品数量
+npm run list-products
+
+# 重新构建（更新产品页面）
+npm run build
+```
+
+### 🌐 页面访问
+
+- **产品列表页**: `http://localhost:3000/products`
+- **产品详情页**: `http://localhost:3000/products/{产品ID}`
+
+### 🎨 产品页面特性
+
+- ✅ **响应式设计**: 支持各种设备访问
+- ✅ **极客风格**: 符合网站整体设计风格
+- ✅ **SEO 优化**: 每个产品都有独立的 URL 和元数据
+- ✅ **自动生成**: 无需手动创建页面文件
+- ✅ **分类管理**: 支持按产品分类筛选
+- ✅ **搜索功能**: 支持产品名称和描述搜索
+
+### 📸 产品图片
+
+将产品图片放在 `static/img/products/` 目录下，文件名与产品 ID 一致：
+
+```
+static/img/products/
+├── smart-voice-chatbot.jpg
+├── auto-weighing-system.jpg
+├── air-quality-monitor.jpg
+└── ...
+```
+
+### 🔧 自定义样式
+
+产品页面样式可以在以下文件中自定义：
+
+- `src/pages/ProductsList.module.css` - 产品列表样式
+- `src/pages/ProductDetail.module.css` - 产品详情样式
+
+### 📋 产品管理最佳实践
+
+1. **命名规范**: 产品 ID 使用英文，采用 kebab-case 格式
+2. **图片优化**: 建议图片尺寸为 400x300px，格式为 JPG 或 PNG
+3. **描述完整**: 产品描述应包含主要功能和适用场景
+4. **特性清晰**: 产品特性使用简洁明了的语言
+5. **规格准确**: 技术规格应准确反映产品参数
+
+---
+
+## 📚 MDX 文档
 
 - [Docusaurus Markdown 功能](https://docusaurus.io/docs/markdown-features)
 - [MDX](https://mdxjs.com/)

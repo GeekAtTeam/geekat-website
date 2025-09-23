@@ -1,0 +1,162 @@
+/* 联系我们页面样式 */
+.pageTitle {
+  background: #a78bfa;
+  color: #ffffff !important;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem auto;
+  display: block;
+  width: fit-content;
+}
+
+.pageSubtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+[data-theme='dark'] .pageSubtitle {
+  color: #d1d5db;
+}
+
+/* 联系信息样式 */
+.contactInfo {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+[data-theme='dark'] .contactInfo {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.contactInfo h2 {
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+[data-theme='dark'] .contactInfo h2 {
+  color: #f9fafb;
+}
+
+.infoItem {
+  margin-bottom: 1.5rem;
+}
+
+.infoItem h3 {
+  color: #374151;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+[data-theme='dark'] .infoItem h3 {
+  color: #d1d5db;
+}
+
+.infoItem p {
+  color: #6b7280;
+  margin: 0;
+}
+
+[data-theme='dark'] .infoItem p {
+  color: #d1d5db;
+}
+
+.infoItem ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.infoItem li {
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+
+[data-theme='dark'] .infoItem li {
+  color: #d1d5db;
+}
+
+/* 联系表单样式 */
+.contactForm {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+[data-theme='dark'] .contactForm {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.contactForm h2 {
+  color: #111827;
+  margin-bottom: 1.5rem;
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+[data-theme='dark'] .contactForm h2 {
+  color: #f9fafb;
+}
+
+.contactForm label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: #374151;
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+[data-theme='dark'] .contactForm label {
+  color: #d1d5db;
+}
+
+.contactForm input,
+.contactForm select,
+.contactForm textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+[data-theme='dark'] .contactForm input,
+[data-theme='dark'] .contactForm select,
+[data-theme='dark'] .contactForm textarea {
+  background: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
+
+.contactForm input:focus,
+.contactForm select:focus,
+.contactForm textarea:focus {
+  outline: none;
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+}
+
+.contactForm button {
+  width: 100%;
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}

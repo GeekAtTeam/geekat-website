@@ -67,17 +67,8 @@ const config: Config = {
   ],
 
   plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'products',
-        path: 'products',
-        routeBasePath: 'products',
-        sidebarPath: require.resolve('./sidebars.ts'),
-        // ... other options
-        exclude: ['BACKLOG.md', 'SUMMARY.md', '*/README.md'],
-      },
-    ],
+    // 自定义产品插件 - 暂时禁用
+    // require.resolve('./plugins/products-plugin.js'),
   ],
 
   scripts: [

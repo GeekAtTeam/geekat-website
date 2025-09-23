@@ -1,0 +1,38 @@
+{
+  "id": "smart-voice-chatbot",
+  "name": "智能语音聊天机器人",
+  "category": "人工智能",
+  "description": "基于深度学习的智能语音聊天机器人，支持多轮对话、情感分析和个性化推荐。适用于客服、教育、娱乐等多个场景。",
+  "image": "/img/products/smart-voice-chatbot.jpg",
+  "price": "¥299起",
+  "status": "已发布",
+  "features": [
+    "支持中文、英文多语言对话",
+    "情感识别和智能回复",
+    "个性化学习和记忆功能",
+    "API接口，易于集成",
+    "云端部署，支持大规模并发"
+  ],
+  "specifications": {
+    "响应时间": "< 500ms",
+    "并发用户": "1000+",
+    "准确率": "95%+",
+    "支持语言": "中文、英文",
+    "部署方式": "云端/本地",
+    "API版本": "RESTful API v2.0"
+  },
+  "downloads": [
+    {
+      "name": "产品手册.pdf",
+      "url": "/downloads/smart-voice-chatbot-manual.pdf"
+    },
+    {
+      "name": "API文档.pdf",
+      "url": "/downloads/smart-voice-chatbot-api.pdf"
+    },
+    {
+      "name": "SDK下载.zip",
+      "url": "/downloads/smart-voice-chatbot-sdk.zip"
+    }
+  ]
+}

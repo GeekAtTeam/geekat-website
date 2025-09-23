@@ -1,0 +1,125 @@
+/* 产品列表页面样式 */
+.pageTitle {
+  background: #a78bfa;
+  color: #ffffff !important;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 2rem auto;
+  display: block;
+  width: fit-content;
+}
+
+.pageSubtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 产品卡片样式 */
+.productCard {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+[data-theme='dark'] .productCard {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.productCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .productCard:hover {
+  box-shadow: 0 10px 25px rgba(167, 139, 250, 0.2);
+}
+
+.productImage {
+  height: 200px;
+  overflow: hidden;
+  background: #f9fafb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+[data-theme='dark'] .productImage {
+  background: #111827;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.productContent {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+[data-theme='dark'] .productTitle {
+  color: #f9fafb;
+}
+
+.productDescription {
+  color: #6b7280;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex: 1;
+}
+
+[data-theme='dark'] .productDescription {
+  color: #d1d5db;
+}
+
+.productMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.category {
+  background: #a78bfa;
+  color: #ffffff;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.price {
+  color: #059669;
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+[data-theme='dark'] .price {
+  color: #10b981;
+}

@@ -1,0 +1,34 @@
+{
+  "id": "air-quality-monitor",
+  "name": "空气质量监测系统",
+  "category": "物联网",
+  "description": "实时监测空气质量的多参数传感器系统，支持PM2.5、PM10、CO2、温湿度等多种指标监测，提供数据分析和预警功能。",
+  "image": "/img/products/air-quality-monitor.jpg",
+  "price": "¥599起",
+  "status": "已发布",
+  "features": [
+    "多参数同时监测",
+    "实时数据传输",
+    "智能预警系统",
+    "历史数据分析",
+    "移动端APP监控"
+  ],
+  "specifications": {
+    "监测参数": "PM2.5, PM10, CO2, 温湿度, VOC",
+    "数据精度": "PM2.5: ±10μg/m³",
+    "传输方式": "4G/WiFi/LoRa",
+    "电池续航": "6个月",
+    "工作温度": "-20°C ~ 60°C",
+    "防护等级": "IP65"
+  },
+  "downloads": [
+    {
+      "name": "产品手册.pdf",
+      "url": "/downloads/air-quality-monitor-manual.pdf"
+    },
+    {
+      "name": "APP下载.apk",
+      "url": "/downloads/air-quality-monitor-app.apk"
+    }
+  ]
+}

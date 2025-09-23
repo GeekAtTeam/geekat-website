@@ -1,0 +1,34 @@
+{
+  "id": "auto-weighing-system",
+  "name": "无人值守自动称重系统",
+  "category": "工业自动化",
+  "description": "集成AI视觉识别的高精度自动称重系统，支持多种货物类型识别，实现无人值守的全自动化称重流程。",
+  "image": "/img/products/auto-weighing-system.jpg",
+  "price": "¥4999起",
+  "status": "已发布",
+  "features": [
+    "高精度称重传感器，精度达0.01kg",
+    "AI视觉识别货物类型",
+    "自动打印标签和单据",
+    "数据实时上传和统计",
+    "支持多种通信协议"
+  ],
+  "specifications": {
+    "称重精度": "±0.01kg",
+    "称重范围": "0-1000kg",
+    "识别准确率": "99.5%",
+    "响应时间": "< 3秒",
+    "工作温度": "-10°C ~ 60°C",
+    "通信接口": "RS485, Ethernet, WiFi"
+  },
+  "downloads": [
+    {
+      "name": "产品手册.pdf",
+      "url": "/downloads/auto-weighing-system-manual.pdf"
+    },
+    {
+      "name": "安装指南.pdf",
+      "url": "/downloads/auto-weighing-system-installation.pdf"
+    }
+  ]
+}
