@@ -18,89 +18,272 @@
 }
 
 :root {
-  /* 核心主色 (蓝色系) */
-  --ifm-color-primary: #2b6cb0;
-  --ifm-color-primary-dark: #2c5282;
-  --ifm-color-primary-darker: #2a4365;
-  --ifm-color-primary-darkest: #1a365d;
-  --ifm-color-primary-light: #4299e1;
-  --ifm-color-primary-lighter: #63b3ed;
-  --ifm-color-primary-lightest: #90cdf4;
+  /* 核心主色 (神秘蓝紫色系 - Light模式) */
+  --ifm-color-primary: #7c3aed;
+  --ifm-color-primary-dark: #6d28d9;
+  --ifm-color-primary-darker: #5b21b6;
+  --ifm-color-primary-darkest: #4c1d95;
+  --ifm-color-primary-light: #8b5cf6;
+  --ifm-color-primary-lighter: #a78bfa;
+  --ifm-color-primary-lightest: #c4b5fd;
 
-  /* 背景颜色 (灰色系) */
-  --ifm-background-color: #f7fafc;
-  --ifm-navbar-background-color: #edf2f7;
-  --ifm-footer-background-color: #2d3748;
-  --ifm-card-background-color: #fff;
+  /* 背景颜色 (浅色系) */
+  --ifm-background-color: #fafafa;
+  --ifm-navbar-background-color: rgba(255, 255, 255, 0.95);
+  --ifm-footer-background-color: #f8fafc;
+  --ifm-card-background-color: #ffffff;
 
   /* 文本颜色 */
   --ifm-font-color-base: #2d3748;
-  --ifm-font-color-base-inverse: #e2e8f0;
+  --ifm-font-color-base-inverse: #ffffff;
   --ifm-heading-color: var(--ifm-font-color-base);
 
   /* 链接与交互 */
-  --ifm-link-color: #3182ce;
-  --ifm-link-hover-color: #2b6cb0;
+  --ifm-link-color: #2d3748;
+  --ifm-link-hover-color: #7c3aed;
   --ifm-menu-color-active: var(--ifm-color-primary);
+  --ifm-navbar-link-color: #2d3748;
+  --ifm-navbar-link-hover-color: #7c3aed;
   
   /* 代码区块 */
   --ifm-code-font-size: 95%;
-  --ifm-code-background: #f7fafc;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-code-background: #f1f5f9;
+  --docusaurus-highlighted-code-line-bg: rgba(124, 58, 237, 0.1);
 
   /* 按钮 */
   --ifm-button-background-color: var(--ifm-color-primary);
-  --ifm-button-color: #fff;
+  --ifm-button-color: #ffffff;
   --ifm-button-border-color: transparent;
 
   /* 边框 */
-  --ifm-border-color: #cbd5e0;
+  --ifm-border-color: #e2e8f0;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  /* 核心主色 (更亮蓝色) */
-  --ifm-color-primary: #63b3ed;
-  --ifm-color-primary-dark: #4299e1;
-  --ifm-color-primary-darker: #3182ce;
-  --ifm-color-primary-darkest: #2b6cb0;
-  --ifm-color-primary-light: #90cdf4;
-  --ifm-color-primary-lighter: #bee3f8;
-  --ifm-color-primary-lightest: #ebf8ff;
+  /* 极客风格主色 (神秘蓝紫色系) */
+  --ifm-color-primary: #8b5cf6;
+  --ifm-color-primary-dark: #7c3aed;
+  --ifm-color-primary-darker: #6d28d9;
+  --ifm-color-primary-darkest: #5b21b6;
+  --ifm-color-primary-light: #a78bfa;
+  --ifm-color-primary-lighter: #c4b5fd;
+  --ifm-color-primary-lightest: #ddd6fe;
 
   /* 深色背景 */
-  --ifm-background-color: #1a202c;
-  --ifm-navbar-background-color: #2d3748;
-  --ifm-footer-background-color: #171923;
-  --ifm-card-background-color: #2d3748;
+  --ifm-background-color: #0a0a0a;
+  --ifm-navbar-background-color: rgba(0, 0, 0, 0.8);
+  --ifm-footer-background-color: #000000;
+  --ifm-card-background-color: #111111;
 
-  /* 浅色文本 */
-  --ifm-font-color-base: #e2e8f0;
-  --ifm-font-color-base-inverse: #2d3748;
+  /* 极客风格文本 */
+  --ifm-font-color-base: #8b5cf6;
+  --ifm-font-color-base-inverse: #0a0a0a;
   
   /* 链接与交互 */
-  --ifm-link-color: #63b3ed;
-  --ifm-link-hover-color: #90cdf4;
+  --ifm-link-color: #8b5cf6;
+  --ifm-link-hover-color: #a78bfa;
   --ifm-menu-color-active: var(--ifm-color-primary-light);
+  --ifm-navbar-link-color: #8b5cf6;
+  --ifm-navbar-link-hover-color: #a78bfa;
 
   /* 代码区块 */
-  --ifm-code-background: rgba(26, 32, 44, 0.8);
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-code-background: rgba(0, 0, 0, 0.9);
+  --docusaurus-highlighted-code-line-bg: rgba(139, 92, 246, 0.1);
 
   /* 按钮 */
   --ifm-button-background-color: var(--ifm-color-primary);
-  --ifm-button-color: var(--ifm-font-color-base);
+  --ifm-button-color: #ffffff;
 
   /* 边框 */
-  --ifm-border-color: #4a5568;
+  --ifm-border-color: #8b5cf6;
 }
 
 .navbar {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
+/* 极客风格导航栏 - 神秘蓝紫色风格 */
 [data-theme='dark'] .navbar {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-bottom: 2px solid #8b5cf6;
+  box-shadow: 
+    0 0 20px rgba(139, 92, 246, 0.3),
+    inset 0 1px 0 rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+/* 导航栏滚动时的效果 */
+[data-theme='dark'] .navbar.scrolled {
+  background: rgba(0, 0, 0, 0.98) !important;
+  box-shadow: 
+    0 0 30px rgba(139, 92, 246, 0.4),
+    inset 0 1px 0 rgba(139, 92, 246, 0.2);
+}
+
+/* Light模式导航栏样式 */
+.navbar {
+  font-family: 'Courier New', 'Monaco', monospace;
+  transition: all 0.3s ease;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 2px solid #e2e8f0;
+  box-shadow: 
+    0 0 20px rgba(45, 55, 72, 0.1),
+    inset 0 1px 0 rgba(45, 55, 72, 0.05);
+}
+
+/* Logo 终端风格效果 */
+[data-theme='dark'] .navbar__brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Light模式Logo样式 */
+.navbar__brand {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo 终端风格效果 - Dark模式 */
+[data-theme='dark'] .navbar__brand img {
+  filter: 
+    brightness(1.2) 
+    contrast(1.1)
+    drop-shadow(0 0 5px rgba(139, 92, 246, 0.4));
+  transition: filter 0.3s ease;
+}
+
+[data-theme='dark'] .navbar__brand:hover img {
+  filter: 
+    brightness(1.3) 
+    contrast(1.2)
+    drop-shadow(0 0 10px rgba(139, 92, 246, 0.6));
+}
+
+/* Logo 终端风格效果 - Light模式 */
+.navbar__brand img {
+  filter: 
+    brightness(1.1) 
+    contrast(1.05)
+    drop-shadow(0 0 3px rgba(124, 58, 237, 0.3));
+  transition: filter 0.3s ease;
+}
+
+.navbar__brand:hover img {
+  filter: 
+    brightness(1.2) 
+    contrast(1.1)
+    drop-shadow(0 0 6px rgba(124, 58, 237, 0.5));
+}
+
+/* 极客风格导航链接 - Dark模式 */
+[data-theme='dark'] .navbar__link {
+  position: relative;
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #8b5cf6 !important;
+}
+
+[data-theme='dark'] .navbar__link:hover {
+  color: #a78bfa !important;
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+  transform: translateY(-1px);
+}
+
+/* 极客风格导航链接 - Light模式 */
+.navbar__link {
+  position: relative;
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #2d3748 !important;
+}
+
+.navbar__link:hover {
+  color: #7c3aed !important;
+  text-shadow: 0 0 8px rgba(124, 58, 237, 0.6);
+  transform: translateY(-1px);
+}
+
+/* 终端风格下划线效果 - Dark模式 */
+[data-theme='dark'] .navbar__link::before {
+  content: '> ';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme='dark'] .navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #8b5cf6;
+  box-shadow: 0 0 5px rgba(139, 92, 246, 0.8);
+  transition: width 0.3s ease;
+}
+
+/* 终端风格下划线效果 - Light模式 */
+.navbar__link::before {
+  content: '> ';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.navbar__link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #7c3aed;
+  box-shadow: 0 0 5px rgba(124, 58, 237, 0.6);
+  transition: width 0.3s ease;
+}
+
+[data-theme='dark'] .navbar__link:hover::before {
+  opacity: 1;
+}
+
+[data-theme='dark'] .navbar__link:hover::after {
+  width: 100%;
+}
+
+/* 导航栏标题样式 - Dark模式 */
+[data-theme='dark'] .navbar__title {
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  color: #8b5cf6 !important;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+/* 导航栏标题样式 - Light模式 */
+.navbar__title {
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  color: #2d3748 !important;
+  text-shadow: none;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
 
@@ -108,6 +291,82 @@
   opacity: 0.9;
   transform: translateY(-2px);
   transition: all 0.2s ease;
+}
+
+
+/* 统一按钮样式 - 适用于Light和Dark模式（星空背景） */
+.button--secondary {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 2px solid #8b5cf6 !important;
+  color: #8b5cf6 !important;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 
+    0 0 15px rgba(139, 92, 246, 0.3),
+    inset 0 0 10px rgba(139, 92, 246, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.button--secondary::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.2), transparent);
+  transition: left 0.5s ease;
+}
+
+.button--secondary:hover {
+  background: rgba(139, 92, 246, 0.1) !important;
+  border-color: #a78bfa !important;
+  color: #8b5cf6 !important;
+  box-shadow: 
+    0 0 25px rgba(139, 92, 246, 0.5),
+    inset 0 0 15px rgba(139, 92, 246, 0.2);
+  text-shadow: 0 0 10px rgba(139, 92, 246, 0.8);
+  transform: translateY(-2px);
+}
+
+.button--secondary:hover::before {
+  left: 100%;
+}
+
+/* 主题切换按钮优化 - Dark模式 */
+[data-theme='dark'] .clean-btn {
+  color: #8b5cf6;
+  border: 1px solid #8b5cf6;
+  background: rgba(0, 0, 0, 0.8);
+  font-family: 'Courier New', 'Monaco', monospace;
+  transition: all 0.3s ease;
+}
+
+[data-theme='dark'] .clean-btn:hover {
+  color: #a78bfa;
+  border-color: #a78bfa;
+  background: rgba(139, 92, 246, 0.1);
+  box-shadow: 0 0 15px rgba(139, 92, 246, 0.4);
+}
+
+/* 主题切换按钮优化 - Light模式 */
+.clean-btn {
+  color: #7c3aed;
+  border: 1px solid #7c3aed;
+  background: rgba(255, 255, 255, 0.9);
+  font-family: 'Courier New', 'Monaco', monospace;
+  transition: all 0.3s ease;
+}
+
+.clean-btn:hover {
+  color: #6d28d9;
+  border-color: #6d28d9;
+  background: rgba(124, 58, 237, 0.05);
+  box-shadow: 0 0 12px rgba(124, 58, 237, 0.3);
 }
 
 img[src*='#center'] {
@@ -176,4 +435,255 @@ img[src*='#center-100'] {
   text-align: center;
   margin-top: 20px;
   padding: 32px;
+}
+
+/* 极客风格 Footer - 神秘蓝紫色风格 */
+[data-theme='dark'] .footer {
+  background: #000000 !important;
+  border-top: 2px solid #8b5cf6;
+  box-shadow: 
+    0 -5px 20px rgba(139, 92, 246, 0.2),
+    inset 0 1px 0 rgba(139, 92, 246, 0.1);
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+/* Light模式Footer */
+.footer {
+  background: #f8fafc !important;
+  border-top: 2px solid #e2e8f0;
+  box-shadow: 
+    0 -5px 20px rgba(45, 55, 72, 0.08),
+    inset 0 1px 0 rgba(45, 55, 72, 0.03);
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+[data-theme='dark'] .footer__title {
+  color: #8b5cf6 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.5);
+  margin-bottom: 1rem;
+}
+
+.footer__title {
+  color: #2d3748 !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: none;
+  margin-bottom: 1rem;
+}
+
+[data-theme='dark'] .footer__link-item {
+  color: #8b5cf6 !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.footer__link-item {
+  color: #2d3748 !important;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+[data-theme='dark'] .footer__link-item:hover {
+  color: #a78bfa !important;
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.8);
+  transform: translateX(5px);
+}
+
+.footer__link-item:hover {
+  color: #7c3aed !important;
+  text-shadow: 0 0 6px rgba(124, 58, 237, 0.6);
+  transform: translateX(5px);
+}
+
+[data-theme='dark'] .footer__link-item::before {
+  content: '> ';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.footer__link-item::before {
+  content: '> ';
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+[data-theme='dark'] .footer__link-item:hover::before {
+  opacity: 1;
+}
+
+.footer__link-item:hover::before {
+  opacity: 1;
+}
+
+[data-theme='dark'] .footer__copyright {
+  color: #8b5cf6 !important;
+  font-family: 'Courier New', 'Monaco', monospace;
+  text-align: center;
+  border-top: 1px solid rgba(139, 92, 246, 0.3);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.3);
+}
+
+.footer__copyright {
+  color: #2d3748 !important;
+  font-family: 'Courier New', 'Monaco', monospace;
+  text-align: center;
+  border-top: 1px solid rgba(45, 55, 72, 0.2);
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-shadow: none;
+}
+
+/* 极客风格分隔线 */
+[data-theme='dark'] .footer__links {
+  border-bottom: 1px solid rgba(139, 92, 246, 0.2);
+  padding-bottom: 2rem;
+}
+
+.footer__links {
+  border-bottom: 1px solid rgba(45, 55, 72, 0.1);
+  padding-bottom: 2rem;
+}
+
+/* 极客风格图标 */
+[data-theme='dark'] .footer__link-item svg {
+  filter: drop-shadow(0 0 3px rgba(139, 92, 246, 0.5));
+  transition: filter 0.3s ease;
+}
+
+.footer__link-item svg {
+  filter: drop-shadow(0 0 2px rgba(124, 58, 237, 0.3));
+  transition: filter 0.3s ease;
+}
+
+[data-theme='dark'] .footer__link-item:hover svg {
+  filter: drop-shadow(0 0 6px rgba(139, 92, 246, 0.8));
+}
+
+.footer__link-item:hover svg {
+  filter: drop-shadow(0 0 4px rgba(124, 58, 237, 0.6));
+}
+
+/* 极客风格全局文本 */
+[data-theme='dark'] {
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+/* 全局字体设置 */
+* {
+  font-family: 'Courier New', 'Monaco', monospace;
+}
+
+/* 极客风格标题 - Dark模式 */
+[data-theme='dark'] h1, 
+[data-theme='dark'] h2, 
+[data-theme='dark'] h3, 
+[data-theme='dark'] h4, 
+[data-theme='dark'] h5, 
+[data-theme='dark'] h6 {
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  color: #8b5cf6;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.3);
+}
+
+/* 极客风格标题 - Light模式 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Courier New', 'Monaco', monospace;
+  font-weight: bold;
+  color: #2d3748;
+  text-shadow: none;
+}
+
+/* 极客风格段落文本 - Dark模式 */
+[data-theme='dark'] p {
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* 极客风格段落文本 - Light模式 */
+p {
+  color: #2d3748;
+  line-height: 1.6;
+}
+
+/* 极客风格代码块 - Dark模式 */
+[data-theme='dark'] code {
+  background: rgba(0, 0, 0, 0.9);
+  color: #8b5cf6;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  font-family: 'Courier New', 'Monaco', monospace;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  text-shadow: 0 0 3px rgba(139, 92, 246, 0.5);
+}
+
+/* 极客风格代码块 - Light模式 */
+code {
+  background: #f1f5f9;
+  color: #2d3748;
+  border: 1px solid rgba(45, 55, 72, 0.2);
+  font-family: 'Courier New', 'Monaco', monospace;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  text-shadow: none;
+}
+
+/* 极客风格预代码块 - Dark模式 */
+[data-theme='dark'] pre {
+  background: rgba(0, 0, 0, 0.95);
+  border: 2px solid #8b5cf6;
+  box-shadow: 
+    0 0 15px rgba(139, 92, 246, 0.2),
+    inset 0 0 10px rgba(139, 92, 246, 0.05);
+}
+
+/* 极客风格预代码块 - Light模式 */
+pre {
+  background: #f8fafc;
+  border: 2px solid #7c3aed;
+  box-shadow: 
+    0 0 10px rgba(124, 58, 237, 0.15),
+    inset 0 0 8px rgba(124, 58, 237, 0.03);
+}
+
+[data-theme='dark'] pre code {
+  background: transparent;
+  border: none;
+  color: #8b5cf6;
+  text-shadow: 0 0 5px rgba(139, 92, 246, 0.6);
+}
+
+pre code {
+  background: transparent;
+  border: none;
+  color: #2d3748;
+  text-shadow: none;
+}
+
+/* 选中文本样式 - Light模式（浅紫色荧光笔效果） */
+::selection {
+  background: rgba(139, 92, 246, 0.15);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba(139, 92, 246, 0.15);
+  color: inherit;
+}
+
+/* 选中文本样式 - Dark模式（深紫色背景，白色文字） */
+[data-theme='dark'] ::selection {
+  background: rgba(139, 92, 246, 0.6);
+  color: #ffffff;
+}
+
+[data-theme='dark'] ::-moz-selection {
+  background: rgba(139, 92, 246, 0.6);
+  color: #ffffff;
 }
