@@ -1,0 +1,184 @@
+{
+  "id": "getiot-tech",
+  "name": "AIoT知识库（人人都懂物联网）",
+  "description": "以物联网+人工智能（AIoT）技术栈为主的计算机编程知识库，涵盖物联网的感知层、网络层、平台层和应用层，提供系统化的技术学习资源。基础教程永久免费，同时提供开源知识库源码，欢迎大家 Star 和 Fork。部分专栏为会员专享，提供一对一培训服务，项目辅导。",
+  "category": "知识库",
+  "price": "免费",
+  "image": "img/products/getiot-tech-banner.png",
+  "qrcode": "",
+  "features": [
+    "全面的物联网技术栈知识体系",
+    "涵盖感知层、网络层、平台层和应用层",
+    "多种编程语言教程（C/C++、Python、Java、Go、TypeScript等）",
+    "硬件开发教程（Arduino、STM32、树莓派、瑞芯微等）",
+    "RTOS实时操作系统教程",
+    "Linux系统编程和嵌入式开发",
+    "Web前后端开发技术",
+    "数据库和数据分析",
+    "人工智能和机器学习",
+    "开源项目和创客DIY指南",
+    "科技行业资讯和趋势分析",
+    "系统化的学习路线规划"
+  ],
+  "specifications": {
+    "平台": "Web 网站（支持 PWA）",
+    "技术栈": "物联网+人工智能（AIoT）",
+    "编程语言": "C/C++、Python、Java、Go、TypeScript、JavaScript、PHP、Rust、Lua、R",
+    "硬件平台": "Arduino、STM32、树莓派、BeagleBone Black、Wio Terminal",
+    "操作系统": "Linux、RT-Thread、FreeRTOS、uCOS-II、Zephyr",
+    "Web技术": "HTML、CSS、React、Vue、微信小程序、MySQL、MongoDB",
+    "工业应用": "电动汽车、激光雷达、计算机视觉、ROS机器人操作系统",
+    "开源状态": "部分开源",
+    "更新频率": "持续更新"
+  },
+  "benefits": [
+    "系统化的物联网知识体系，从入门到精通",
+    "涵盖硬件、软件、算法全栈技术栈",
+    "适合学生、工程师、开发者的学习资源",
+    "开源透明，社区共建共享",
+    "理论与实践相结合的教学方式",
+    "持续更新的最新技术内容",
+    "多平台适配，随时随地学习",
+    "免费开放，降低学习门槛"
+  ],
+  "useCases": [
+    "物联网系统开发和设计",
+    "嵌入式系统学习和实践",
+    "人工智能和机器学习应用",
+    "工业自动化和智能制造",
+    "智能家居和智慧城市",
+    "机器人技术和自动化控制",
+    "传感器网络和数据采集",
+    "Web应用和移动开发",
+    "学术研究和教学辅助",
+    "创客项目和DIY制作"
+  ],
+  "targetAudience": [
+    "物联网和嵌入式工程师",
+    "计算机科学专业学生",
+    "STEM教育工作者",
+    "创客和DIY爱好者",
+    "人工智能研究者",
+    "Web开发工程师",
+    "工业自动化工程师",
+    "开源软件贡献者",
+    "技术爱好者和学习者",
+    "企业技术培训师"
+  ],
+  "technicalDetails": {
+    "知识体系": "感知层、网络层、平台层、应用层",
+    "内容结构": "编程语言、前端、后端、数据库、Linux、RTOS、Python、创客项目",
+    "技术标准": "遵循行业标准和最佳实践",
+    "开源协议": "开源知识库，社区共建",
+    "内容质量": "系统性、实用性、前沿性",
+    "更新机制": "持续更新，紧跟技术发展",
+    "学习路径": "从基础到高级的渐进式学习",
+    "实践导向": "理论结合实践的教学方式"
+  },
+  "contact": {
+    "website": "https://getiot.tech",
+    "about": "https://getiot.tech/aboutus/",
+    "github": "https://github.com/getiot/getiot-kb",
+    "email": "contact@getiot.tech"
+  },
+  "downloads": [
+    {
+      "name": "访问网站：getiot.tech",
+      "url": "https://getiot.tech",
+      "type": "知识库"
+    },
+    {
+      "name": "GitHub 开源仓库",
+      "url": "https://github.com/getiot/getiot-kb",
+      "type": "源码"
+    }
+  ],
+  "categories": [
+    {
+      "name": "编程语言",
+      "description": "C语言、C++、Python、Javascript、Typescript、Java、PHP、Go、Rust、Lua、R语言"
+    },
+    {
+      "name": "Web开发",
+      "description": "HTML、CSS、React、Vue、微信小程序、MongoDB"
+    },
+    {
+      "name": "Linux",
+      "description": "Linux基础、命令大全、系统编程、嵌入式Linux、Shell编程"
+    },
+    {
+      "name": "硬件",
+      "description": "Arduino、STM32、Wio Terminal、树莓派、BeagleBone Black、创客DIY项目"
+    },
+    {
+      "name": "RTOS",
+      "description": "RT-Thread、FreeRTOS、uCOS-II、Zephyr"
+    },
+    {
+      "name": "工业应用",
+      "description": "电动汽车、激光雷达、AUTOSAR、ROS机器人操作系统、ROS2"
+    }
+  ],
+  "tools": [
+    "AI工具导航",
+    "科技信息源",
+    "中国高校导航",
+    "全球高校导航",
+    "单位换算器",
+    "时间戳转换器",
+    "CRC校验计算器",
+    "Base64编解码",
+    "JSON格式化工具",
+    "二维码生成器",
+    "Emoji表情大全"
+  ],
+  "socialMedia": [
+    "CSDN",
+    "知乎",
+    "小红书",
+    "哔哩哔哩",
+    "即刻App",
+    "GitHub",
+    "微信公众号"
+  ],
+  "partners": [
+    "RT-Thread社区",
+    "freeCodeCamp",
+    "程序媛计划",
+    "HelloGitHub",
+    "Hacker News",
+    "电子森林",
+    "硬创社"
+  ],
+  "tags": ["物联网", "AIoT", "知识库", "开源", "编程教程", "嵌入式", "人工智能", "创客", "STEM教育", "技术学习"],
+  "status": "已上线",
+  "launchDate": "2020-11-01",
+  "version": "持续更新",
+  "stars": "52",
+  "forks": "7",
+  "rating": "4.9/5.0",
+  "slogan": "万物互联，你我同在！",
+  "mission": "致力于为业界提供最佳的物联网（IoT）相关技术知识与入门教程",
+  "reviews": [
+    {
+      "user": "物联网工程师",
+      "rating": 5,
+      "comment": "非常全面的物联网知识库！从硬件到软件，从基础到高级，内容系统且实用。"
+    },
+    {
+      "user": "计算机专业学生",
+      "rating": 5,
+      "comment": "作为学生，这个知识库帮助我建立了完整的物联网知识体系，学习路径很清晰。"
+    },
+    {
+      "user": "创客爱好者",
+      "rating": 4,
+      "comment": "开源项目很棒！DIY教程很详细，社区氛围也很好，学到了很多实用的技能。"
+    }
+  ],
+  "screenshots": [
+    "img/products/aiot-knowledge-base-screenshot-1.png",
+    "img/products/aiot-knowledge-base-screenshot-2.png",
+    "img/products/aiot-knowledge-base-screenshot-3.png"
+  ]
+}
