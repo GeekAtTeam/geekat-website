@@ -19,35 +19,19 @@
     "图形界面支持",
     "分布式部署架构",
     "异构多核平台支持",
-    "Web 系统监控界面",
-    "DBus 消息服务",
-    "MQTT 消息支持",
-    "ZeroMQ 集成",
-    "rabbitMQ 支持",
-    "DDS 消息服务",
-    "定时日志冲刷",
-    "自动日志滚动",
     "磁盘空间管理",
-    "在线升级功能",
-    "离线升级支持",
-    "状态脚本管理",
-    "POSIX 兼容性",
-    "C语言核心实现"
+    "POSIX 兼容性"
   ],
   "specifications": {
-    "项目类型": "嵌入式Linux应用程序开发框架",
-    "开源协议": "Apache-2.0 license",
-    "编程语言": "C (71.0%), JavaScript (23.1%), C++ (3.4%), CMake (1.2%), Vue (1.0%)",
-    "目标平台": "嵌入式Linux系统",
+    "项目类型": "嵌入式 Linux 应用程序开发框架",
+    "开源协议": "Apache-2.0 License",
+    "编程语言": "C/C++, JavaScript, Vue",
+    "目标平台": "Linux 系统",
     "架构支持": "异构多核平台",
     "部署方式": "分布式部署",
     "通信机制": "消息通信同步",
-    "开发语言": "C/C++/JavaScript",
     "构建系统": "CMake",
-    "Web界面": "Vue.js",
-    "系统监控": "Web界面监控",
-    "GitHub地址": "https://github.com/openember/openember",
-    "活跃度": "5 stars, 1 fork, 115 commits"
+    "Web界面": "Vue.js"
   },
   "benefits": [
     "加速嵌入式项目开发",
@@ -114,7 +98,7 @@
   },
   "downloads": [
     {
-      "name": "GitHub仓库",
+      "name": "GitHub 仓库",
       "url": "https://github.com/openember/openember",
       "type": "源代码"
     },
