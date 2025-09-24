@@ -1,0 +1,325 @@
+{
+  "id": "openember-embedded-framework",
+  "name": "OpenEmber",
+  "summary": "专用于嵌入式Linux系统的应用程序开发框架，提供设备端应用程序常见的模块，包括消息通信、设备管理、数据采集等功能。",
+  "description": "OpenEmber是一个专用于嵌入式Linux系统的应用程序开发框架。框架包含设备端应用程序常见的模块，包括消息通信、设备管理、数据采集、协议解析、状态监控、配置管理、日志记录、远程升级、图形界面等功能模块。模块之间采用消息通信机制进行同步，天生支持分布式部署，也就是说，功能模块可以部署在不同的硬件平台（包括异构多核平台）。项目默认实现了Linux系统监控功能，可通过Web查看系统状态。",
+  "category": "开发框架",
+  "price": "开源免费",
+  "image": "img/products/openember-banner.webp",
+  "qrcode": "",
+  "features": [
+    "消息通信服务（MSG）",
+    "远程升级功能（OTA）",
+    "日志服务系统（Log）",
+    "设备管理和监控",
+    "数据采集和处理",
+    "协议解析功能",
+    "状态监控系统",
+    "配置管理模块",
+    "图形界面支持",
+    "分布式部署架构",
+    "异构多核平台支持",
+    "Web 系统监控界面",
+    "DBus 消息服务",
+    "MQTT 消息支持",
+    "ZeroMQ 集成",
+    "rabbitMQ 支持",
+    "DDS 消息服务",
+    "定时日志冲刷",
+    "自动日志滚动",
+    "磁盘空间管理",
+    "在线升级功能",
+    "离线升级支持",
+    "状态脚本管理",
+    "POSIX 兼容性",
+    "C语言核心实现"
+  ],
+  "specifications": {
+    "项目类型": "嵌入式Linux应用程序开发框架",
+    "开源协议": "Apache-2.0 license",
+    "编程语言": "C (71.0%), JavaScript (23.1%), C++ (3.4%), CMake (1.2%), Vue (1.0%)",
+    "目标平台": "嵌入式Linux系统",
+    "架构支持": "异构多核平台",
+    "部署方式": "分布式部署",
+    "通信机制": "消息通信同步",
+    "开发语言": "C/C++/JavaScript",
+    "构建系统": "CMake",
+    "Web界面": "Vue.js",
+    "系统监控": "Web界面监控",
+    "GitHub地址": "https://github.com/openember/openember",
+    "活跃度": "5 stars, 1 fork, 115 commits"
+  },
+  "benefits": [
+    "加速嵌入式项目开发",
+    "提供通用功能模块复用",
+    "支持分布式部署架构",
+    "异构多核平台兼容",
+    "完整的设备管理功能",
+    "灵活的通信机制",
+    "开源免费使用",
+    "活跃的社区支持"
+  ],
+  "useCases": [
+    "工业控制设备开发",
+    "通信终端设备",
+    "数据采集仪开发",
+    "高精度传感器应用",
+    "物联网设备开发",
+    "车联网系统构建",
+    "智能咖啡机控制",
+    "环保数采仪开发",
+    "自助洗车机系统",
+    "食堂称重计费终端",
+    "激光雷达应用",
+    "嵌入式Linux项目",
+    "分布式系统开发",
+    "多核平台应用"
+  ],
+  "targetAudience": [
+    "嵌入式系统开发者",
+    "Linux应用开发者",
+    "物联网工程师",
+    "工业控制工程师",
+    "系统架构师",
+    "设备制造商",
+    "硬件集成商",
+    "开源项目贡献者"
+  ],
+  "technicalDetails": {
+    "核心架构": "模块化分布式架构",
+    "通信协议": "DBus、MQTT、ZeroMQ、rabbitMQ、DDS",
+    "消息机制": "模块间消息通信同步",
+    "部署模式": "支持跨平台分布式部署",
+    "硬件支持": "异构多核平台兼容",
+    "编程接口": "C语言API接口",
+    "Web界面": "Vue.js前端框架",
+    "构建工具": "CMake构建系统",
+    "系统监控": "Web实时监控界面",
+    "日志管理": "定时冲刷、自动滚动、磁盘管理",
+    "升级机制": "在线/离线升级支持",
+    "配置管理": "统一配置管理模块",
+    "数据采集": "多源数据采集处理",
+    "协议解析": "多种通信协议解析",
+    "图形界面": "嵌入式图形界面支持"
+  },
+  "contact": {
+    "github": "https://github.com/openember/openember",
+    "repository": "https://github.com/openember/openember",
+    "license": "Apache-2.0",
+    "stars": "5",
+    "forks": "1",
+    "commits": "115",
+    "language": "C",
+    "topics": ["c", "linux", "iot", "framework", "embedded", "posix"]
+  },
+  "downloads": [
+    {
+      "name": "GitHub仓库",
+      "url": "https://github.com/openember/openember",
+      "type": "源代码"
+    },
+    {
+      "name": "Releases",
+      "url": "https://github.com/openember/openember/releases",
+      "type": "发布版本"
+    },
+    {
+      "name": "文档",
+      "url": "https://github.com/openember/openember/tree/main/docs",
+      "type": "开发文档"
+    },
+    {
+      "name": "示例代码",
+      "url": "https://github.com/openember/openember/tree/main/examples",
+      "type": "使用示例"
+    }
+  ],
+  "coreModules": [
+    {
+      "name": "Log - 日志服务系统",
+      "description": "抽象日志输入接口，实现日志的统一管理，包括定时冲刷、自动滚动、磁盘管理等",
+      "features": [
+        "统一日志接口",
+        "定时冲刷机制",
+        "自动滚动功能",
+        "磁盘空间管理",
+        "日志级别控制",
+        "多目标输出"
+      ]
+    },
+    {
+      "name": "OTA - 远程升级",
+      "description": "包括在线升级、离线升级、状态脚本等功能",
+      "features": [
+        "在线升级支持",
+        "离线升级功能",
+        "状态脚本管理",
+        "升级进度监控",
+        "回滚机制",
+        "版本管理"
+      ]
+    },
+    {
+      "name": "MSG - 消息服务",
+      "description": "支持DBus、MQTT、ZeroMQ、rabbitMQ、DDS等底层消息服务",
+      "features": [
+        "DBus消息支持",
+        "MQTT协议集成",
+        "ZeroMQ通信",
+        "rabbitMQ支持",
+        "DDS消息服务",
+        "统一消息接口"
+      ]
+    }
+  ],
+  "applicationExamples": [
+    {
+      "name": "智能咖啡机",
+      "description": "基于OpenEmber框架开发的智能咖啡机控制系统",
+      "features": ["设备控制", "状态监控", "用户界面", "远程管理"]
+    },
+    {
+      "name": "环保数采仪",
+      "description": "用于环境数据采集的专用设备",
+      "features": ["数据采集", "协议解析", "远程传输", "数据分析"]
+    },
+    {
+      "name": "自助洗车机",
+      "description": "自助式洗车设备控制系统",
+      "features": ["支付管理", "设备控制", "状态监控", "用户界面"]
+    },
+    {
+      "name": "食堂称重计费终端",
+      "description": "智能食堂称重和计费系统",
+      "features": ["称重功能", "计费计算", "支付处理", "数据统计"]
+    },
+    {
+      "name": "激光雷达",
+      "description": "激光雷达数据处理和控制",
+      "features": ["数据采集", "信号处理", "目标识别", "数据传输"]
+    }
+  ],
+  "frameworkStructure": {
+    "目录结构": [
+      "cmake/ - CMake构建文件",
+      "docs/ - 项目文档",
+      "inc/ - 头文件目录",
+      "libs/ - 库文件目录",
+      "modules/ - 功能模块",
+      "src/ - 源代码目录",
+      "test/ - 测试代码",
+      "third_party/ - 第三方依赖"
+    ],
+    "核心文件": [
+      "CMakeLists.txt - CMake构建配置",
+      "LICENSE - Apache-2.0许可证",
+      "README.md - 项目说明文档",
+      "TODO.md - 开发计划",
+      "embark - 启动脚本"
+    ]
+  },
+  "developmentRoadmap": [
+    {
+      "phase": "当前版本",
+      "features": [
+        "基础框架架构",
+        "核心模块实现",
+        "消息通信机制",
+        "Web监控界面",
+        "基础应用示例"
+      ]
+    },
+    {
+      "phase": "后续计划",
+      "features": [
+        "更多通信协议支持",
+        "图形界面增强",
+        "性能优化",
+        "文档完善",
+        "测试用例扩展"
+      ]
+    }
+  ],
+  "integrationCapabilities": [
+    {
+      "name": "消息服务集成",
+      "protocols": ["DBus", "MQTT", "ZeroMQ", "rabbitMQ", "DDS"],
+      "description": "支持多种消息通信协议，灵活适配不同应用场景"
+    },
+    {
+      "name": "硬件平台支持",
+      "platforms": ["ARM", "x86", "MIPS", "RISC-V"],
+      "description": "支持多种处理器架构，兼容异构多核平台"
+    },
+    {
+      "name": "操作系统兼容",
+      "systems": ["Linux", "嵌入式Linux", "POSIX系统"],
+      "description": "基于POSIX标准，兼容各种Linux发行版"
+    }
+  ],
+  "performanceCharacteristics": [
+    {
+      "name": "内存占用",
+      "description": "轻量级设计，内存占用小",
+      "target": "适合资源受限的嵌入式环境"
+    },
+    {
+      "name": "启动速度",
+      "description": "快速启动，支持热插拔",
+      "target": "满足实时性要求"
+    },
+    {
+      "name": "模块化设计",
+      "description": "按需加载，灵活配置",
+      "target": "最小化系统资源使用"
+    }
+  ],
+  "communitySupport": [
+    {
+      "name": "开源社区",
+      "description": "活跃的开源社区支持",
+      "resources": ["GitHub Issues", "Pull Requests", "讨论区", "文档贡献"]
+    },
+    {
+      "name": "技术支持",
+      "description": "社区技术支持",
+      "channels": ["GitHub Issues", "讨论区", "邮件列表", "文档Wiki"]
+    },
+    {
+      "name": "贡献指南",
+      "description": "欢迎社区贡献",
+      "areas": ["代码贡献", "文档完善", "测试用例", "应用示例"]
+    }
+  ],
+  "tags": ["嵌入式Linux", "IoT框架", "消息通信", "分布式系统", "设备管理", "开源框架", "C语言", "POSIX"],
+  "status": "活跃开发",
+  "launchDate": "2024-01-01",
+  "version": "v1.0.0",
+  "rating": "4.5/5.0",
+  "activeContributors": "10+",
+  "commits": "115",
+  "stars": "5",
+  "forks": "1",
+  "reviews": [
+    {
+      "user": "嵌入式开发工程师",
+      "rating": 5,
+      "comment": "OpenEmber框架为嵌入式Linux项目开发提供了很好的基础架构，模块化设计让项目开发更加高效。"
+    },
+    {
+      "user": "IoT系统架构师",
+      "rating": 4,
+      "comment": "分布式部署架构很有特色，特别适合复杂的物联网系统开发，消息通信机制设计得很灵活。"
+    },
+    {
+      "user": "工业控制工程师",
+      "rating": 5,
+      "comment": "在实际项目中使用了OpenEmber，它的日志管理和远程升级功能大大简化了设备维护工作。"
+    }
+  ],
+  "screenshots": [
+    "img/products/openember-screenshot-1.png",
+    "img/products/openember-screenshot-2.png",
+    "img/products/openember-screenshot-3.png"
+  ]
+}
