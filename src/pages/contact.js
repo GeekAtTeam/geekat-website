@@ -23,15 +23,15 @@ export default function Contact() {
               </div>
               
               <div className={styles.infoItem}>
-                <h3>成立时间</h3>
-                <p>2025年2月7日</p>
+                <h3>联系邮箱</h3>
+                <p>service@geekat.cn</p>
               </div>
               
               <div className={styles.infoItem}>
                 <h3>主营业务</h3>
                 <ul>
-                  <li>智能硬件开发（嵌入式系统）</li>
-                  <li>数字化产品构建（中间件、网站、App、小程序）</li>
+                  <li>智能硬件开发（物联网、嵌入式系统、边缘计算设备）</li>
+                  <li>数字化产品构建（桌面软件、中间件、网站、App、小程序）</li>
                   <li>技术培训和 STEM 编程教育</li>
                 </ul>
               </div>
