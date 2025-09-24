@@ -1,0 +1,164 @@
+{
+  "id": "pagetemplatify-static-generator",
+  "name": "PageTemplatify",
+  "description": "简单灵活的静态 HTML 页面生成工具，基于 JSON 配置和 Jinja2 模板引擎，支持多主题多模板，适合企业官网、SaaS 平台、电商平台等场景。",
+  "category": "开源工具",
+  "price": "免费",
+  "image": "img/products/pagetemplatify-banner.png",
+  "qrcode": "",
+  "features": [
+    "配置驱动开发，只需编辑 JSON 配置文件",
+    "内置多套专业模板主题",
+    "纯静态 HTML 输出，可部署于任何服务器",
+    "一键打包成 zip 文件，方便部署",
+    "Python + Jinja2 技术栈，依赖少易用快速",
+    "适合备案用途，支持展示备案信息",
+    "易于扩展，模板结构清晰",
+    "跨平台兼容，支持 Windows/macOS/Linux",
+    "响应式设计，移动端友好",
+    "支持 Bootstrap 5 和 Bootstrap Icons"
+  ],
+  "specifications": {
+    "开发语言": "Python + HTML + CSS",
+    "模板引擎": "Jinja2",
+    "UI框架": "Bootstrap 5",
+    "图标库": "Bootstrap Icons",
+    "输出格式": "静态 HTML 文件",
+    "配置文件": "JSON 格式",
+    "内置主题": "多套专业模板",
+    "操作系统": "Windows、macOS、Linux",
+    "Python版本": "3.6+",
+    "许可证": "MIT License"
+  },
+  "benefits": [
+    "快速搭建企业官网和落地页",
+    "无需编程基础，JSON 配置即可使用",
+    "一套内容支持多种风格切换",
+    "纯静态输出，部署简单成本低",
+    "适合备案用途，满足合规要求",
+    "开源透明，可自由定制和扩展",
+    "专业模板设计，美观大方",
+    "支持热更新预览功能"
+  ],
+  "useCases": [
+    "企业官网和公司介绍页面",
+    "SaaS平台落地页",
+    "电商平台首页",
+    "个人博客和作品集",
+    "新闻网站和媒体平台",
+    "产品展示和营销页面",
+    "活动宣传和专题页面",
+    "备案验证和 ICP 展示页面"
+  ],
+  "targetAudience": [
+    "企业 IT 部门和市场部门",
+    "SaaS 创业公司和产品团队",
+    "个人开发者和设计师",
+    "小型企业和初创公司",
+    "营销团队和运营人员",
+    "前端开发工程师",
+    "需要快速搭建网站的用户",
+    "对静态网站有需求的团队"
+  ],
+  "technicalDetails": {
+    "核心技术": "Python + Jinja2 + Bootstrap 5",
+    "架构模式": "配置驱动 + 模板引擎",
+    "构建工具": "自定义 Python 脚本（ptfy.py）",
+    "依赖管理": "requirements.txt",
+    "输出优化": "静态资源压缩和优化",
+    "部署方式": "任意 Web 服务器或 CDN",
+    "扩展性": "模块化模板设计",
+    "性能": "纯静态，加载速度快"
+  },
+  "contact": {
+    "github": "https://github.com/GeekAtTeam/PageTemplatify",
+    "demo": "https://geekatteam.github.io/PageTemplatify/",
+    "email": "service@geekat.com",
+    "issues": "https://github.com/GeekAtTeam/PageTemplatify/issues"
+  },
+  "downloads": [
+    {
+      "name": "GitHub Releases",
+      "url": "https://github.com/GeekAtTeam/PageTemplatify/releases",
+      "type": "源码下载"
+    },
+    {
+      "name": "在线演示",
+      "url": "https://geekatteam.github.io/PageTemplatify/",
+      "type": "在线预览"
+    },
+    {
+      "name": "GitHub仓库",
+      "url": "https://github.com/GeekAtTeam/PageTemplatify",
+      "type": "源码仓库"
+    }
+  ],
+  "themes": [
+    {
+      "name": "enterprise",
+      "title": "企业官网",
+      "description": "适合企业官网和公司介绍页面",
+      "config": "configs/enterprise.json"
+    },
+    {
+      "name": "saas",
+      "title": "SaaS平台",
+      "description": "适合 SaaS 平台和产品落地页",
+      "config": "configs/saas.json"
+    },
+    {
+      "name": "ecommerce",
+      "title": "电商平台",
+      "description": "适合电商平台和购物网站",
+      "config": "configs/ecommerce.json"
+    },
+    {
+      "name": "blog",
+      "title": "个人博客",
+      "description": "适合个人博客和作品集",
+      "config": "configs/blog.json"
+    },
+    {
+      "name": "news",
+      "title": "新闻网站",
+      "description": "适合新闻网站和媒体平台",
+      "config": "configs/news.json"
+    }
+  ],
+  "quickStart": {
+    "install": "git clone https://github.com/GeekAtTeam/PageTemplatify.git && pip install -r requirements.txt",
+    "listThemes": "python ptfy.py list",
+    "build": "python ptfy.py build --theme enterprise",
+    "preview": "python ptfy.py preview --theme enterprise"
+  },
+  "tags": ["静态网站", "模板引擎", "开源工具", "企业官网", "Jinja2", "Bootstrap", "Python", "备案", "多主题"],
+  "status": "已上线",
+  "launchDate": "2025-07-05",
+  "version": "v1.0.0",
+  "downloadCount": "500+",
+  "rating": "4.8/5.0",
+  "stars": "229",
+  "forks": "16",
+  "reviews": [
+    {
+      "user": "企业IT经理",
+      "rating": 5,
+      "comment": "非常实用的工具！我们用它快速搭建了公司官网，JSON配置很直观，5种模板都很专业。"
+    },
+    {
+      "user": "SaaS产品经理",
+      "rating": 5,
+      "comment": "作为SaaS团队，我们需要快速迭代落地页，PageTemplatify帮我们节省了大量开发时间。"
+    },
+    {
+      "user": "个人开发者",
+      "rating": 4,
+      "comment": "开源免费，功能强大，特别适合快速搭建静态网站。模板质量很高，响应式设计也很到位。"
+    }
+  ],
+  "screenshots": [
+    "img/products/pagetemplatify-screenshot-1.png",
+    "img/products/pagetemplatify-screenshot-2.png",
+    "img/products/pagetemplatify-screenshot-3.png"
+  ]
+}
