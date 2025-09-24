@@ -1,0 +1,162 @@
+{
+  "id": "aha-emoji-website",
+  "name": "Aha Emoji（啊哈 Emoji）",
+  "description": "现代化的表情工具平台，提供最便捷的表情搜索、复制和使用体验。支持最新 Unicode 标准，让您轻松获取和使用各种表情符号。",
+  "category": "Web应用",
+  "price": "免费",
+  "image": "img/products/ahaemoji-banner.png",
+  "qrcode": "",
+  "features": [
+    "全面的表情分类浏览（9大类别）",
+    "详细的表情信息（Unicode编码、版本等）",
+    "一键复制到剪贴板",
+    "下载原始表情图片",
+    "响应式设计，支持移动端访问",
+    "深色模式支持",
+    "表情博客功能",
+    "表情名称语音朗读",
+    "多种表情尺寸选择（S、M、L、XL、XXL）",
+    "实时表情搜索和筛选"
+  ],
+  "specifications": {
+    "平台": "Web 应用",
+    "支持标准": "最新 Unicode 标准",
+    "表情分类": "9大类别（表情情感、人物身体、动物自然、食物饮品、旅行地点、活动、物品、符号、旗帜）",
+    "表情尺寸": "5种尺寸（S、M、L、XL、XXL）",
+    "响应式设计": "支持移动端和桌面端",
+    "主题模式": "浅色/深色模式",
+    "浏览器兼容": "现代浏览器",
+    "语言支持": "多语言界面",
+    "更新频率": "定期更新",
+    "版本": "v2.3.2"
+  },
+  "benefits": [
+    "提升沟通效率，快速找到合适的表情",
+    "支持最新 Unicode 标准，表情最全最新",
+    "一键复制功能，使用便捷",
+    "详细的 Unicode 信息，便于开发者使用",
+    "响应式设计，随时随地使用",
+    "深色模式保护视力",
+    "多种尺寸选择，满足不同需求",
+    "语音朗读功能，提升无障碍体验"
+  ],
+  "useCases": [
+    "社交媒体表情使用",
+    "聊天工具表情选择",
+    "文档和演示文稿表情插入",
+    "网页设计和开发",
+    "内容创作和编辑",
+    "教育和培训材料制作",
+    "表情符号学习和研究",
+    "跨平台表情标准化"
+  ],
+  "targetAudience": [
+    "社交媒体用户",
+    "内容创作者和编辑",
+    "网页设计师和开发者",
+    "教育工作者和学生",
+    "产品经理和运营人员",
+    "聊天软件用户",
+    "表情符号爱好者",
+    "需要表情符号的专业人士"
+  ],
+  "technicalDetails": {
+    "技术栈": "现代 Web 技术",
+    "标准支持": "Unicode 标准",
+    "响应式设计": "移动优先设计",
+    "性能优化": "快速加载和搜索",
+    "无障碍支持": "语音朗读功能",
+    "浏览器兼容": "现代浏览器支持",
+    "数据更新": "实时 Unicode 数据",
+    "用户体验": "直观易用的界面"
+  },
+  "contact": {
+    "website": "https://ahaemoji.com",
+    "about": "https://ahaemoji.com/about",
+    "email": "service@geekat.cn",
+    "twitter": "@luhuadong"
+  },
+  "downloads": [
+    {
+      "name": "访问网站：ahaemoji.com",
+      "url": "https://ahaemoji.com",
+      "type": "Web应用"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Smileys & Emotion",
+      "icon": "😀",
+      "description": "表情和情感类"
+    },
+    {
+      "name": "People & Body",
+      "icon": "💪",
+      "description": "人物和身体类"
+    },
+    {
+      "name": "Animals & Nature",
+      "icon": "🐼",
+      "description": "动物和自然类"
+    },
+    {
+      "name": "Food & Drink",
+      "icon": "🍔",
+      "description": "食物和饮品类"
+    },
+    {
+      "name": "Travel & Places",
+      "icon": "✈️",
+      "description": "旅行和地点类"
+    },
+    {
+      "name": "Activities",
+      "icon": "⚽",
+      "description": "活动类"
+    },
+    {
+      "name": "Objects",
+      "icon": "💡",
+      "description": "物品类"
+    },
+    {
+      "name": "Symbols",
+      "icon": "✅",
+      "description": "符号类"
+    },
+    {
+      "name": "Flags",
+      "icon": "🚩",
+      "description": "旗帜类"
+    }
+  ],
+  "sizes": ["S", "M", "L", "XL", "XXL"],
+  "tags": ["表情符号", "Unicode", "Web应用", "表情工具", "复制粘贴", "移动端", "深色模式", "语音朗读", "表情搜索"],
+  "status": "已上线",
+  "launchDate": "2024-01-01",
+  "version": "v2.3.2",
+  "lastUpdated": "2025-06-13",
+  "rating": "4.9/5.0",
+  "reviews": [
+    {
+      "user": "社交媒体运营",
+      "rating": 5,
+      "comment": "非常实用的表情工具！分类清晰，搜索快速，一键复制功能特别方便。"
+    },
+    {
+      "user": "前端开发者",
+      "rating": 5,
+      "comment": "作为开发者，经常需要查找表情的Unicode编码，这个网站提供了完整的信息，很专业。"
+    },
+    {
+      "user": "内容创作者",
+      "rating": 4,
+      "comment": "表情很全，界面简洁，深色模式很护眼。语音朗读功能很有创意，提升了使用体验。"
+    }
+  ],
+  "screenshots": [
+    "img/products/aha-emoji-screenshot-1.png",
+    "img/products/aha-emoji-screenshot-2.png",
+    "img/products/aha-emoji-screenshot-3.png"
+  ]
+}
