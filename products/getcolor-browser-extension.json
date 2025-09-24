@@ -1,0 +1,124 @@
+{
+  "id": "getcolor-browser-extension",
+  "name": "GetColor",
+  "description": "一款简单、好用、免费的浏览器插件，帮助用户从网页中快速提取颜色信息，支持多种颜色格式和便捷的操作方式。",
+  "category": "浏览器插件",
+  "price": "免费",
+  "image": "img/products/getcolor-banner.png",
+  "qrcode": "",
+  "features": [
+    "一键提取网页元素颜色",
+    "支持多种颜色格式（HEX、RGB、HSL、HSV）",
+    "颜色历史记录功能",
+    "快捷键操作支持",
+    "颜色对比度检测",
+    "颜色调色板生成",
+    "导出颜色到设计工具",
+    "跨浏览器兼容性",
+    "简洁直观的用户界面",
+    "实时颜色预览"
+  ],
+  "specifications": {
+    "平台": "浏览器插件",
+    "支持浏览器": "Chrome、Firefox、Edge、Safari",
+    "颜色格式": "HEX、RGB、HSL、HSV",
+    "操作系统": "Windows、macOS、Linux",
+    "文件大小": "< 1MB",
+    "权限要求": "网页访问权限、本地存储权限",
+    "更新频率": "定期更新",
+    "开源状态": "开源项目"
+  },
+  "benefits": [
+    "提升设计师工作效率",
+    "简化颜色提取流程",
+    "支持多种设计工具集成",
+    "提供专业的颜色分析功能",
+    "节省手动查找颜色的时间",
+    "确保颜色信息的准确性",
+    "支持团队协作和分享",
+    "持续更新和改进"
+  ],
+  "useCases": [
+    "网页设计和开发",
+    "UI/UX设计工作",
+    "品牌色彩方案制定",
+    "网站主题色彩提取",
+    "设计稿颜色校对",
+    "前端开发颜色引用",
+    "设计系统构建",
+    "色彩研究和分析"
+  ],
+  "targetAudience": [
+    "网页设计师",
+    "UI/UX设计师",
+    "前端开发工程师",
+    "平面设计师",
+    "品牌设计师",
+    "产品经理",
+    "学生和设计师新手",
+    "对色彩敏感的用户"
+  ],
+  "technicalDetails": {
+    "开发技术": "JavaScript、HTML5、CSS3",
+    "架构模式": "浏览器扩展API",
+    "数据存储": "本地存储",
+    "性能优化": "轻量级设计",
+    "兼容性": "现代浏览器支持",
+    "安全性": "权限最小化原则"
+  },
+  "contact": {
+    "github": "https://github.com/GeekAtTeam/GetColor",
+    "email": "service@geekat.com",
+    "issues": "https://github.com/GeekAtTeam/GetColor/issues"
+  },
+  "downloads": [
+    {
+      "name": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/search/getcolor",
+      "type": "Chrome扩展"
+    },
+    {
+      "name": "Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/search/getcolor",
+      "type": "Edge扩展"
+    },
+    {
+      "name": "Firefox Add-ons",
+      "url": "https://addons.mozilla.org/firefox/addon/getcolor",
+      "type": "Firefox插件"
+    },
+    {
+      "name": "GitHub Releases",
+      "url": "https://github.com/GeekAtTeam/GetColor/releases",
+      "type": "源码下载"
+    }
+  ],
+  "tags": ["浏览器插件", "颜色提取", "设计工具", "前端开发", "UI设计", "开源", "Chrome", "Firefox", "Edge"],
+  "status": "已上线",
+  "launchDate": "2024-03-01",
+  "version": "v1.2.0",
+  "downloadCount": "10,000+",
+  "rating": "4.7/5.0",
+  "reviews": [
+    {
+      "user": "UI设计师小王",
+      "rating": 5,
+      "comment": "非常实用的插件！提取颜色又快又准确，大大提升了我的工作效率。"
+    },
+    {
+      "user": "前端工程师小李",
+      "rating": 5,
+      "comment": "作为前端开发，经常需要提取设计稿的颜色，这个插件帮了大忙，支持多种格式很贴心。"
+    },
+    {
+      "user": "平面设计师小张",
+      "rating": 4,
+      "comment": "界面简洁，操作简单，颜色历史功能很实用，推荐给同行使用。"
+    }
+  ],
+  "screenshots": [
+    "img/products/getcolor-screenshot-1.png",
+    "img/products/getcolor-screenshot-2.png",
+    "img/products/getcolor-screenshot-3.png"
+  ]
+}
