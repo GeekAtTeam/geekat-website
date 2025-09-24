@@ -213,43 +213,11 @@
 }
 
 .actions .button {
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem !important;
+  display: block !important;
 }
 
-/* 产品详情页按钮样式修复 */
-.actions .button--secondary {
-  background: #ffffff !important;
-  border: 2px solid #7c3aed !important;
-  color: #7c3aed !important;
-  font-family: 'Courier New', 'Monaco', monospace !important;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.actions .button--secondary:hover {
-  background: #7c3aed !important;
-  color: #ffffff !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3);
-}
-
-/* Dark模式下的按钮样式 */
-[data-theme='dark'] .actions .button--secondary {
-  background: rgba(0, 0, 0, 0.8) !important;
-  border: 2px solid #a78bfa !important;
-  color: #a78bfa !important;
-}
-
-[data-theme='dark'] .actions .button--secondary:hover {
-  background: rgba(167, 139, 250, 0.1) !important;
-  border-color: #c4b5fd !important;
-  color: #a78bfa !important;
-  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3);
-}
+/* 产品详情页按钮样式修复 - 使用最高优先级覆盖全局样式 */
 
 /* 下载链接 */
 .downloads {
@@ -294,4 +262,187 @@
 [data-theme='dark'] .downloadLink:hover {
   background: #374151;
   color: #f9fafb;
+}
+
+/* ===== 最高优先级按钮样式修复 ===== */
+/* 使用最高优先级选择器覆盖全局样式 */
+
+/* Light模式 - 返回产品列表按钮 */
+:not([data-theme='dark']) .productSidebar .actions .button--secondary {
+  background: #ffffff !important;
+  border: 2px solid #7c3aed !important;
+  color: #7c3aed !important;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
+  margin-bottom: 1.5rem !important;
+}
+
+:not([data-theme='dark']) .productSidebar .actions .button--secondary:hover {
+  background: #7c3aed !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3) !important;
+  text-shadow: none !important;
+}
+
+/* 禁用全局的扫描动画 */
+:not([data-theme='dark']) .productSidebar .actions .button--secondary::before {
+  display: none !important;
+}
+
+:not([data-theme='dark']) .productSidebar .actions .button--secondary:hover::before {
+  display: none !important;
+}
+
+/* Dark模式 - 返回产品列表按钮 */
+[data-theme='dark'] .productSidebar .actions .button--secondary {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 2px solid #a78bfa !important;
+  color: #a78bfa !important;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
+  margin-bottom: 1.5rem !important;
+}
+
+[data-theme='dark'] .productSidebar .actions .button--secondary:hover {
+  background: rgba(167, 139, 250, 0.1) !important;
+  border-color: #c4b5fd !important;
+  color: #a78bfa !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3) !important;
+  text-shadow: none !important;
+}
+
+/* 禁用全局的扫描动画 */
+[data-theme='dark'] .productSidebar .actions .button--secondary::before {
+  display: none !important;
+}
+
+[data-theme='dark'] .productSidebar .actions .button--secondary:hover::before {
+  display: none !important;
+}
+
+/* 自定义按钮样式 - 通过类名控制 */
+.customSecondaryButton {
+  background: #ffffff !important;
+  border: 2px solid #7c3aed !important;
+  color: #7c3aed !important;
+  font-family: 'Courier New', 'Monaco', monospace !important;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.customSecondaryButton:hover {
+  background: #7c3aed !important;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(124, 58, 237, 0.3) !important;
+  text-shadow: none !important;
+}
+
+.customSecondaryButton::before {
+  display: none !important;
+}
+
+.customSecondaryButton:hover::before {
+  display: none !important;
+}
+
+/* Dark模式下的自定义按钮样式 */
+[data-theme='dark'] .customSecondaryButton {
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 2px solid #a78bfa !important;
+  color: #a78bfa !important;
+  box-shadow: none !important;
+}
+
+[data-theme='dark'] .customSecondaryButton:hover {
+  background: rgba(167, 139, 250, 0.1) !important;
+  border-color: #c4b5fd !important;
+  color: #a78bfa !important;
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.3) !important;
+  text-shadow: none !important;
+}
+
+/* 微信小程序二维码样式 */
+.qrcodeSection {
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #e5e7eb;
+}
+
+[data-theme='dark'] .qrcodeSection {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.qrcodeSection h4 {
+  margin: 0 0 1rem 0;
+  color: #374151;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .qrcodeSection h4 {
+  color: #e5e7eb;
+}
+
+.qrcodeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.qrcode {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  border: 2px solid #e5e7eb;
+  background: #ffffff;
+  padding: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme='dark'] .qrcode {
+  border-color: #374151;
+  background: #ffffff;
+}
+
+.qrcode:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.qrcodeTip {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #6b7280;
+  font-style: italic;
+}
+
+[data-theme='dark'] .qrcodeTip {
+  color: #9ca3af;
 }

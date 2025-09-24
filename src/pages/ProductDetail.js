@@ -106,6 +106,21 @@ export default function ProductDetail({product}) {
                 )}
               </div>
               
+              {/* 微信小程序二维码 */}
+              {product.qrcode && (
+                <div className={styles.qrcodeSection}>
+                  <h4>扫码体验</h4>
+                  <div className={styles.qrcodeContainer}>
+                    <img
+                      src={useBaseUrl(product.qrcode)}
+                      alt={`${product.name} 微信小程序二维码`}
+                      className={styles.qrcode}
+                    />
+                  </div>
+                  <p className={styles.qrcodeTip}>微信扫描二维码体验小程序</p>
+                </div>
+              )}
+              
               <div className={styles.actions}>
                 <Link
                   className="button button--primary button--block"
@@ -114,7 +129,7 @@ export default function ProductDetail({product}) {
                   联系我们
                 </Link>
                 <Link
-                  className="button button--secondary button--block"
+                  className={`button button--secondary button--block ${styles.customSecondaryButton}`}
                   to="/products"
                 >
                   返回产品列表
