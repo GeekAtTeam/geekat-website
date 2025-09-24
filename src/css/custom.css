@@ -370,6 +370,27 @@
 
 /* 产品详情页按钮样式现在由CSS模块处理 */
 
+/* 产品详情页按钮间距修复 - 使用最高优先级 */
+.productSidebar .actions .button--primary,
+.productSidebar .actions .button--secondary {
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+/* 更具体的选择器确保生效 */
+.productSidebar .actions a.button--primary,
+.productSidebar .actions a.button--secondary {
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+/* 使用ID选择器提高优先级 */
+.container .productSidebar .actions .button--primary,
+.container .productSidebar .actions .button--secondary {
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
 .button--secondary::before {
   content: '';
   position: absolute;
