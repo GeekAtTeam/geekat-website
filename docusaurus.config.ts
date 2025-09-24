@@ -126,23 +126,23 @@ const config: Config = {
           items: [
             {
               label: '智能语音聊天机器人',
-              to: '/',
+              to: '/products/smart-voice-chatbot',
             },
             {
               label: '无人值守自动称重系统',
-              to: '/',
+              to: '/products/auto-weighing-system',
             },
             {
               label: '空气质量监测系统',
-              to: '/',
+              to: '/products/air-quality-monitor',
             },
             {
               label: '花园自动浇灌系统',
-              to: '/',
+              to: '/products/smart-garden-irrigation',
             },
             {
               label: '智能厨余堆肥机',
-              to: '/',
+              to: '/products/smart-compost-machine',
             },
           ],
         },
