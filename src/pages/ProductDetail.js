@@ -125,12 +125,15 @@ export default function ProductDetail({product}) {
                 <Link
                   className="button button--primary button--block"
                   to="/contact"
+                  style={{ marginBottom: '1rem', display: 'block' }}
                 >
                   联系我们
                 </Link>
+                
                 <Link
                   className={`button button--secondary button--block ${styles.customSecondaryButton}`}
                   to="/products"
+                  style={{ marginBottom: '0.5rem', display: 'block' }}
                 >
                   返回产品列表
                 </Link>
@@ -138,7 +141,7 @@ export default function ProductDetail({product}) {
               
               {product.downloads && (
                 <div className={styles.downloads}>
-                  <h4>相关下载</h4>
+                  <h4>相关资源</h4>
                   {product.downloads.map((download, index) => (
                     <a
                       key={index}

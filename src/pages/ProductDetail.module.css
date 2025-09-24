@@ -217,6 +217,20 @@
   display: block !important;
 }
 
+/* 使用最高优先级的选择器 */
+.productSidebar .actions .button--primary,
+.productSidebar .actions .button--secondary {
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
+/* 针对具体的按钮类型 */
+.productSidebar .actions a.button--primary,
+.productSidebar .actions a.button--secondary {
+  margin-bottom: 1rem !important;
+  display: block !important;
+}
+
 /* 产品详情页按钮样式修复 - 使用最高优先级覆盖全局样式 */
 
 /* 下载链接 */
