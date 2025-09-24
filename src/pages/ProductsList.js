@@ -35,7 +35,7 @@ export default function ProductsList({products}) {
                 <div className={styles.productContent}>
                   <h3 className={styles.productTitle}>{product.name}</h3>
                   <p className={styles.productDescription}>
-                    {product.description}
+                    {product.summary || product.description}
                   </p>
                   <div className={styles.productMeta}>
                     <span className={styles.category}>{product.category}</span>

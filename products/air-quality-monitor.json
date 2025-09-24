@@ -2,6 +2,7 @@
   "id": "air-quality-monitor",
   "name": "空气质量监测系统",
   "category": "物联网",
+  "summary": "实时监测空气质量的多参数传感器系统，支持PM2.5、PM10、CO2、温湿度等多种指标监测，提供数据分析和预警功能。",
   "description": "实时监测空气质量的多参数传感器系统，支持PM2.5、PM10、CO2、温湿度等多种指标监测，提供数据分析和预警功能。",
   "image": "/img/products/air-quality-monitor.jpg",
   "price": "¥599起",
