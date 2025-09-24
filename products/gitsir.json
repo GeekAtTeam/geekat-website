@@ -1,0 +1,301 @@
+{
+  "id": "gitsir",
+  "name": "极思开源",
+  "summary": "面向开发者的开源软件供应链智能管理平台，提供精准的开源项目选型指南和一键式SBOM生成与安全监控。",
+  "description": "极思开源（gitsir.com）是一个面向开发者的开源软件供应链智能管理平台，专注于为开发者提供精准的开源项目选型指南和一键式SBOM生成与安全监控服务。平台致力于让软件供应链风险可视、可控、可追溯，通过深度洞察、安全可控、极简体验三大核心理念，为开发团队提供全方位的开源软件供应链安全保障。支持项目健康度评估、依赖关系分析、漏洞预警、许可证合规检查等功能，帮助企业构建安全可控的软件开发环境。",
+  "category": "安全平台",
+  "price": "免费试用",
+  "image": "img/products/gitsir-banner.webp",
+  "qrcode": "",
+  "features": [
+    "项目健康度雷达评估",
+    "依赖关系图谱可视化",
+    "SBOM 一键生成（SPDX/CycloneDX）",
+    "实时漏洞预警（CVE/OSV/NVD）",
+    "许可证合规检查",
+    "CI/CD 原生支持",
+    "GitHub Action 集成",
+    "Jenkins 插件支持",
+    "Slack/邮件告警",
+    "历史 SBOM 对比分析",
+    "高级许可证分析",
+    "定制合规策略",
+    "单点登录（SAML）",
+    "私有化部署支持",
+    "专属安全顾问服务",
+    "API 接口调用"
+  ],
+  "specifications": {
+    "平台类型": "开源软件供应链智能管理平台",
+    "目标用户": "开发者、技术负责人、质量体系工程师、安全团队",
+    "核心功能": "项目选型、SBOM 生成、安全监控",
+    "支持格式": "SPDX、CycloneDX",
+    "漏洞数据库": "CVE、OSV、NVD",
+    "扫描速度": "5秒扫描项目成分",
+    "告警响应": "CVE 漏洞分钟级告警",
+    "集成支持": "GitHub Action、Jenkins",
+    "部署方式": "云端服务、私有化部署",
+    "认证方式": "SAML 单点登录",
+    "技术支持": "7×24小时在线服务"
+  },
+  "benefits": [
+    "精准的开源项目选型",
+    "可视化的软件供应链风险",
+    "快速的SBOM生成和扫描",
+    "实时的安全漏洞预警",
+    "自动化的合规检查",
+    "无缝的CI/CD集成",
+    "专业的安全顾问支持",
+    "灵活的部署和定价方案"
+  ],
+  "useCases": [
+    "开源项目选型和评估",
+    "软件供应链安全监控",
+    "SBOM合规性管理",
+    "漏洞风险评估和处理",
+    "许可证合规性检查",
+    "CI/CD安全集成",
+    "企业安全策略制定",
+    "开源软件审计"
+  ],
+  "targetAudience": [
+    "软件开发者",
+    "技术负责人",
+    "安全工程师",
+    "DevOps工程师",
+    "开源项目维护者",
+    "企业CTO/技术总监",
+    "合规管理人员",
+    "软件架构师"
+  ],
+  "technicalDetails": {
+    "扫描技术": "静态代码分析、依赖关系解析",
+    "数据格式": "SPDX、CycloneDX标准",
+    "漏洞数据库": "CVE、OSV、NVD实时同步",
+    "评估算法": "12项指标量化评分",
+    "可视化技术": "依赖关系图谱、雷达图",
+    "集成方式": "RESTful API、Webhook",
+    "CI/CD支持": "GitHub Action、Jenkins插件",
+    "部署架构": "云端SaaS、私有化部署",
+    "数据安全": "加密传输、权限控制",
+    "性能优化": "分布式扫描、缓存机制"
+  },
+  "contact": {
+    "website": "https://gitsir.com",
+    "email": "contact@gitsir.com",
+    "support": "support@gitsir.com",
+    "phone": "020-12345678",
+    "address": "广州市黄埔区加速器",
+    "service": "7×24小时在线服务"
+  },
+  "downloads": [
+    {
+      "name": "访问平台：gitsir.com",
+      "url": "https://gitsir.com",
+      "type": "在线平台"
+    }
+  ],
+  "platformFeatures": [
+    {
+      "name": "项目健康度雷达",
+      "description": "基于活跃度、安全性、社区质量等12项指标量化评分",
+      "metrics": ["活跃度", "安全性", "社区质量", "代码质量", "文档完整性", "更新频率", "贡献者数量", "许可证兼容性", "依赖安全性", "漏洞历史", "维护状态", "社区响应"]
+    },
+    {
+      "name": "依赖关系图谱",
+      "description": "可视化呈现组件嵌套层级，穿透分析传递依赖风险",
+      "capabilities": ["依赖树可视化", "传递依赖分析", "风险路径识别", "影响范围评估", "依赖版本管理", "冲突检测"]
+    },
+    {
+      "name": "SBOM一键生成",
+      "description": "支持SPDX/CycloneDX格式，5秒扫描项目成分",
+      "formats": ["SPDX 2.3", "CycloneDX 1.4", "JSON格式", "XML格式", "YAML格式"],
+      "scanSpeed": "5秒内完成扫描"
+    },
+    {
+      "name": "实时漏洞预警",
+      "description": "联动OSV/NVD数据库，CVE漏洞分钟级告警",
+      "databases": ["CVE数据库", "OSV数据库", "NVD数据库", "GitHub Advisory"],
+      "alertTime": "分钟级告警响应"
+    },
+    {
+      "name": "许可证合规检查",
+      "description": "自动识别GPL/LGPL等传染性协议冲突",
+      "licenseTypes": ["MIT", "Apache 2.0", "GPL v2/v3", "LGPL", "BSD", "MPL", "自定义许可证"],
+      "conflictDetection": "自动冲突检测和风险评估"
+    },
+    {
+      "name": "CI/CD原生支持",
+      "description": "GitHub Action/Jenkins插件自动阻断高危提交",
+      "integrations": ["GitHub Action", "Jenkins", "GitLab CI", "Azure DevOps", "CircleCI", "Travis CI"],
+      "securityGates": "自动安全门禁和阻断机制"
+    }
+  ],
+  "pricingPlans": [
+    {
+      "name": "基础版",
+      "price": "¥0/月",
+      "target": "学生/个人开发者",
+      "features": [
+        "公开仓库扫描（3次/月）",
+        "基础漏洞检测",
+        "精选项目库访问",
+        "基础SBOM生成",
+        "社区支持"
+      ],
+      "limitations": [
+        "每月3次扫描限制",
+        "基础功能访问",
+        "无私有仓库支持"
+      ]
+    },
+    {
+      "name": "专业版",
+      "price": "¥69/月",
+      "target": "中小团队技术负责人",
+      "features": [
+        "私有仓库无限扫描",
+        "历史SBOM对比",
+        "高级许可证分析",
+        "Slack/邮件告警",
+        "API接口访问",
+        "优先级技术支持"
+      ],
+      "benefits": [
+        "无限扫描次数",
+        "高级分析功能",
+        "多渠道告警通知",
+        "API集成能力"
+      ]
+    },
+    {
+      "name": "企业版",
+      "price": "¥299/月",
+      "target": "金融/医疗等强监管企业",
+      "features": [
+        "定制合规策略",
+        "单点登录（SAML）",
+        "私有化部署",
+        "专属安全顾问",
+        "定制化报告",
+        "SLA服务保障",
+        "专属客户经理"
+      ],
+      "benefits": [
+        "完全定制化服务",
+        "企业级安全认证",
+        "本地化部署支持",
+        "专业安全咨询服务"
+      ]
+    }
+  ],
+  "securityMetrics": [
+    {
+      "name": "项目健康度评分",
+      "description": "基于12项指标的综合评分",
+      "range": "0-100分",
+      "factors": ["代码活跃度", "安全漏洞数量", "社区参与度", "文档完整性", "许可证合规性"]
+    },
+    {
+      "name": "依赖风险等级",
+      "description": "依赖组件的风险等级评估",
+      "levels": ["低风险", "中风险", "高风险", "严重风险"],
+      "criteria": ["已知漏洞", "许可证冲突", "维护状态", "版本更新频率"]
+    },
+    {
+      "name": "供应链风险指数",
+      "description": "整体软件供应链的风险评估",
+      "calculation": "基于依赖关系和漏洞严重程度",
+      "output": "风险指数和改善建议"
+    }
+  ],
+  "integrationCapabilities": [
+    {
+      "name": "版本控制系统",
+      "platforms": ["GitHub", "GitLab", "Bitbucket", "Azure DevOps"],
+      "features": ["自动扫描触发", "PR/MR安全检查", "分支保护规则"]
+    },
+    {
+      "name": "CI/CD平台",
+      "platforms": ["GitHub Actions", "Jenkins", "GitLab CI", "CircleCI", "Travis CI"],
+      "features": ["安全门禁", "自动阻断", "扫描报告集成"]
+    },
+    {
+      "name": "项目管理工具",
+      "platforms": ["Jira", "Azure DevOps", "Trello", "Asana"],
+      "features": ["问题自动创建", "风险跟踪", "报告同步"]
+    },
+    {
+      "name": "通信工具",
+      "platforms": ["Slack", "Microsoft Teams", "钉钉", "企业微信"],
+      "features": ["实时告警通知", "风险报告推送", "团队协作"]
+    }
+  ],
+  "complianceStandards": [
+    {
+      "name": "SBOM标准",
+      "standards": ["SPDX 2.3", "CycloneDX 1.4", "SWID Tags"],
+      "support": "完整支持所有主流SBOM格式"
+    },
+    {
+      "name": "安全标准",
+      "standards": ["NIST Cybersecurity Framework", "ISO 27001", "SOC 2"],
+      "support": "符合国际安全标准要求"
+    },
+    {
+      "name": "开源合规",
+      "standards": ["OpenChain", "SPDX License List", "FOSSology"],
+      "support": "开源许可证合规性检查"
+    }
+  ],
+  "dataSources": [
+    "CVE漏洞数据库",
+    "OSV漏洞数据库", 
+    "NVD国家漏洞数据库",
+    "GitHub Advisory Database",
+    "Snyk漏洞数据库",
+    "OWASP依赖检查",
+    "npm安全审计",
+    "PyPI安全信息"
+  ],
+  "analysisTools": [
+    "静态代码分析",
+    "依赖关系解析",
+    "漏洞影响分析",
+    "许可证冲突检测",
+    "供应链风险评估",
+    "组件健康度评估",
+    "安全趋势分析",
+    "合规性检查"
+  ],
+  "tags": ["开源安全", "软件供应链", "SBOM", "漏洞检测", "许可证合规", "DevSecOps", "CI/CD", "安全监控"],
+  "status": "已上线",
+  "launchDate": "2024-01-01",
+  "version": "v2.0.0",
+  "rating": "4.8/5.0",
+  "activeUsers": "10000+",
+  "scannedProjects": "50000+",
+  "vulnerabilitiesDetected": "100000+",
+  "reviews": [
+    {
+      "user": "高级开发工程师",
+      "rating": 5,
+      "comment": "极思开源帮助我们快速识别项目中的安全风险，SBOM生成功能非常实用，大大提升了我们的安全开发效率。"
+    },
+    {
+      "user": "安全团队负责人",
+      "rating": 5,
+      "comment": "平台的项目健康度评估和依赖关系图谱功能很强大，让我们能够全面了解软件供应链的安全状况。"
+    },
+    {
+      "user": "DevOps工程师",
+      "rating": 4,
+      "comment": "CI/CD集成很方便，GitHub Action插件能够自动阻断高危提交，有效保护了我们的代码仓库安全。"
+    }
+  ],
+  "screenshots": [
+    "img/products/gitsir-screenshot-1.png",
+    "img/products/gitsir-screenshot-2.png",
+    "img/products/gitsir-screenshot-3.png"
+  ]
+}
