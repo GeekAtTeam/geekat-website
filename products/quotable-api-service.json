@@ -1,0 +1,234 @@
+{
+  "id": "quotable-api-service",
+  "name": "言屿 API",
+  "summary": "专业的句子 API 服务平台，提供每日随机名言警句、分类搜索、数据导出和图片生成等服务。",
+  "description": "言屿 API（quotable.cn）是一个专业的句子 API 服务平台，致力于收集和整理优质的名言警句、励志语录、文学摘抄等文本内容。平台提供稳定可靠的 API 接口，支持每日随机获取一条或多条名言警句，支持按类别搜索指定语句库，支持数据导出和图片生成等功能。每天免费调用 1000 次，为开发者、内容创作者和应用开发者提供便捷的句子数据服务。",
+  "category": "API服务",
+  "price": "免费（每日1000次）+ 付费套餐",
+  "image": "img/products/quotable-api-banner.webp",
+  "qrcode": "",
+  "features": [
+    "每日随机名言警句 API",
+    "支持批量获取多条句子",
+    "按类别搜索指定语句库",
+    "支持多种数据格式返回（JSON、XML、TXT）",
+    "数据导出功能（Excel、CSV、PDF）",
+    "句子图片生成服务",
+    "RESTful API 接口设计",
+    "详细的 API 文档和示例代码",
+    "多语言支持（中文、英文等）",
+    "高频调用限制和防护机制",
+    "数据统计和分析功能",
+    "SDK和代码示例提供"
+  ],
+  "specifications": {
+    "平台类型": "API 服务平台",
+    "主要功能": "句子数据 API 服务",
+    "接口类型": "RESTful API",
+    "数据格式": "JSON、XML、TXT",
+    "调用限制": "每日 1000 次免费，付费升级",
+    "响应时间": "< 200ms",
+    "可用性": "99.9% SLA 保证",
+    "数据更新": "每日更新",
+    "语言支持": "中文、英文等多语言",
+    "技术支持": "7x24小时技术支持"
+  },
+  "benefits": [
+    "免费获取优质句子数据",
+    "稳定可靠的API服务",
+    "丰富的数据源和分类",
+    "便捷的集成和使用",
+    "支持多种数据格式",
+    "提供图片生成服务",
+    "详细的文档和示例",
+    "灵活的付费套餐选择"
+  ],
+  "useCases": [
+    "应用开发（励志APP、日记应用）",
+    "网站内容填充和SEO优化",
+    "社交媒体内容生成",
+    "教育平台学习资源",
+    "营销文案和广告创意",
+    "个人博客和网站装饰",
+    "移动应用启动页文案",
+    "微信小程序内容服务"
+  ],
+  "targetAudience": [
+    "应用开发者和程序员",
+    "内容创作者和写作者",
+    "网站开发者和设计师",
+    "营销人员和文案策划",
+    "教育工作者和学生",
+    "自媒体运营者",
+    "产品经理和项目经理",
+    "企业技术团队"
+  ],
+  "technicalDetails": {
+    "API架构": "RESTful API设计",
+    "认证方式": "API Key认证",
+    "数据存储": "高性能数据库集群",
+    "缓存机制": "Redis缓存加速",
+    "负载均衡": "多节点负载均衡",
+    "监控系统": "实时性能监控",
+    "安全防护": "DDoS防护、频率限制",
+    "数据备份": "多重备份保障"
+  },
+  "contact": {
+    "website": "https://quotable.cn",
+    "api": "https://quotable.cn/api",
+    "docs": "https://quotable.cn/docs",
+    "email": "contact@quotable.cn",
+    "support": "support@quotable.cn"
+  },
+  "downloads": [
+    {
+      "name": "访问网站：quotable.cn",
+      "url": "https://quotable.cn",
+      "type": "官方网站"
+    },
+    {
+      "name": "API文档",
+      "url": "https://quotable.cn/docs",
+      "type": "技术文档"
+    },
+    {
+      "name": "SDK下载",
+      "url": "https://quotable.cn/sdk",
+      "type": "开发工具"
+    }
+  ],
+  "apiEndpoints": [
+    {
+      "name": "随机句子",
+      "url": "/api/random",
+      "method": "GET",
+      "description": "获取一条随机名言警句"
+    },
+    {
+      "name": "批量获取",
+      "url": "/api/random?count=10",
+      "method": "GET",
+      "description": "获取指定数量的随机句子"
+    },
+    {
+      "name": "分类搜索",
+      "url": "/api/search?category=motivation",
+      "method": "GET",
+      "description": "按类别搜索句子"
+    },
+    {
+      "name": "关键词搜索",
+      "url": "/api/search?keyword=成功",
+      "method": "GET",
+      "description": "按关键词搜索句子"
+    },
+    {
+      "name": "图片生成",
+      "url": "/api/image",
+      "method": "POST",
+      "description": "生成句子图片"
+    }
+  ],
+  "categories": [
+    {
+      "name": "励志语录",
+      "description": "积极向上、激励人心的励志句子",
+      "count": "5000+"
+    },
+    {
+      "name": "人生哲理",
+      "description": "关于人生、生活的深刻思考和感悟",
+      "count": "3000+"
+    },
+    {
+      "name": "爱情语录",
+      "description": "关于爱情、情感的优美句子",
+      "count": "2000+"
+    },
+    {
+      "name": "成功励志",
+      "description": "关于成功、奋斗的激励语句",
+      "count": "4000+"
+    },
+    {
+      "name": "文学摘抄",
+      "description": "经典文学作品中的优美句子",
+      "count": "6000+"
+    },
+    {
+      "name": "名人名言",
+      "description": "历史名人、当代名人的经典语录",
+      "count": "8000+"
+    }
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "calls": "1000次/天",
+      "features": ["基础API调用", "JSON格式返回", "社区支持"]
+    },
+    {
+      "name": "基础版",
+      "price": "¥29/月",
+      "calls": "10000次/天",
+      "features": ["高级API调用", "多种数据格式", "邮件支持", "数据导出"]
+    },
+    {
+      "name": "专业版",
+      "price": "¥99/月",
+      "calls": "50000次/天",
+      "features": ["全部功能", "图片生成", "优先支持", "定制服务"]
+    },
+    {
+      "name": "企业版",
+      "price": "定制",
+      "calls": "无限制",
+      "features": ["私有部署", "专属客服", "定制开发", "SLA保证"]
+    }
+  ],
+  "integrationExamples": [
+    {
+      "language": "JavaScript",
+      "code": "fetch('https://quotable.cn/api/random').then(r => r.json())"
+    },
+    {
+      "language": "Python",
+      "code": "import requests\nr = requests.get('https://quotable.cn/api/random')"
+    },
+    {
+      "language": "PHP",
+      "code": "$response = file_get_contents('https://quotable.cn/api/random');"
+    }
+  ],
+  "tags": ["API服务", "名言警句", "句子数据", "励志语录", "RESTful API", "开发者工具", "内容服务", "数据接口"],
+  "status": "已上线",
+  "launchDate": "2024-03-01",
+  "version": "v2.1.0",
+  "apiVersion": "v1",
+  "rating": "4.7/5.0",
+  "dailyCalls": "1000000+",
+  "activeUsers": "10000+",
+  "reviews": [
+    {
+      "user": "移动应用开发者",
+      "rating": 5,
+      "comment": "API非常稳定，文档详细，集成简单。每日1000次免费额度足够小项目使用。"
+    },
+    {
+      "user": "内容运营",
+      "rating": 4,
+      "comment": "句子质量很高，分类清晰，图片生成功能很实用，大大提升了内容创作效率。"
+    },
+    {
+      "user": "网站开发者",
+      "rating": 5,
+      "comment": "接口响应速度快，数据格式丰富，技术支持很及时，推荐给需要句子数据的开发者。"
+    }
+  ],
+  "screenshots": [
+    "img/products/quotable-api-screenshot-1.png",
+    "img/products/quotable-api-screenshot-2.png",
+    "img/products/quotable-api-screenshot-3.png"
+  ]
+}
