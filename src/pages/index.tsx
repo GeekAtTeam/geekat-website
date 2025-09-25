@@ -66,19 +66,47 @@ export default function Home(): ReactNode {
             pauseDuration={2000}
           />
 
-          {/* 其他内容（按钮等） */}
+          {/* Scroll Down 提示 */}
           <div style={{ 
             position: 'absolute',
-            bottom: '20%',
+            bottom: '10%',
             left: '50%',
             transform: 'translateX(-50%)',
-            zIndex: 2
+            zIndex: 2,
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            gap: '1rem'
           }}>
-            <Link
-              className="button button--secondary button--lg"
-              to="/products">
-              开始探索 🛰
-            </Link>
+            <div style={{
+              width: '28px',
+              height: '48px',
+              border: '2px solid #ffffff',
+              borderRadius: '16px',
+              position: 'relative',
+              opacity: 1.0
+            }}>
+              {/* 鼠标滚轮动画 */}
+              <div style={{
+                position: 'absolute',
+                top: '8px',
+                left: '50%',
+                transform: 'translateX(-50%)',
+                width: '3px',
+                height: '8px',
+                background: '#ffffff',
+                borderRadius: '2px',
+                animation: 'scrollWheel 2s ease-in-out infinite'
+              }} />
+            </div>
+            <div style={{
+              color: '#ffffff',
+              fontSize: '0.9rem',
+              fontWeight: '500',
+              opacity: 0.8
+            }}>
+              Scroll Down
+            </div>
           </div>
       </div>
 

@@ -956,6 +956,22 @@ pre code {
   50% { background-position: -200% 0; }
 }
 
+/* 鼠标滚轮滚动动画 */
+@keyframes scrollWheel {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  50% {
+    top: 24px;
+    opacity: 0.3;
+  }
+  100% {
+    top: 32px;
+    opacity: 0;
+  }
+}
+
 /* 汉堡菜单按钮使用默认样式 - 重置自定义样式但保留基本可见性 */
 .navbar__toggle {
   all: initial !important;
