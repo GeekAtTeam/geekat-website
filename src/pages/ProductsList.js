@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -14,19 +14,14 @@ export default function ProductsList({products}) {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const dropdownRef = useRef(null);
   
-  // 获取所有分类
-  const categories = useMemo(() => {
+  // 获取所有分类 - 直接从产品中提取分类名称
+  const getCategories = () => {
     const categorySet = new Set(productList.map(product => product.category));
-    return ['全部', ...Array.from(categorySet).sort()];
-  }, [productList]);
+    const categoryArray = Array.from(categorySet).sort();
+    return ['全部', ...categoryArray];
+  };
   
-  // 筛选后的产品列表
-  const filteredProducts = useMemo(() => {
-    if (selectedCategory === '全部') {
-      return productList;
-    }
-    return productList.filter(product => product.category === selectedCategory);
-  }, [productList, selectedCategory]);
+  const categories = getCategories();
 
   // 处理点击外部关闭下拉框
   useEffect(() => {
@@ -42,9 +37,17 @@ export default function ProductsList({products}) {
     };
   }, []);
 
-  const handleCategorySelect = (category) => {
-    setSelectedCategory(category);
+  const handleCategorySelect = (categoryName) => {
+    setSelectedCategory(categoryName);
     setIsDropdownOpen(false);
+  };
+
+  // 判断产品是否应该显示
+  const shouldShowProduct = (product) => {
+    if (selectedCategory === '全部') {
+      return true;
+    }
+    return product.category === selectedCategory;
   };
   
   return (
@@ -92,13 +95,19 @@ export default function ProductsList({products}) {
             </div>
           </div>
           <div className={styles.filterStats}>
-            共 {filteredProducts.length} 个产品
+            共 {productList.filter(shouldShowProduct).length} 个产品
           </div>
         </div>
         
         <div className="row">
-          {filteredProducts.map((product) => (
-            <div key={product.id} className="col col--4 margin-bottom--lg">
+          {productList.map((product) => (
+            <div 
+              key={product.id} 
+              className="col col--4 margin-bottom--lg"
+              style={{ 
+                display: shouldShowProduct(product) ? 'block' : 'none' 
+              }}
+            >
               <Link to={`/products/${product.id}`} className={styles.productCardLink}>
                 <div className={styles.productCard}>
                   <div className={styles.productImage}>

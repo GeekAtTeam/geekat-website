@@ -262,6 +262,9 @@
   width: 100%;
   text-align: left;
   border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 [data-theme='dark'] .dropdownItem {
@@ -293,6 +296,12 @@
   background: #7c3aed;
   color: #ffffff;
   font-weight: 600;
+}
+
+.categoryIcon {
+  font-size: 1rem;
+  width: 1.2rem;
+  text-align: center;
 }
 
 .filterStats {
