@@ -1,53 +1,145 @@
 .features {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: #f8fafc;
 }
 
-@media (max-width: 996px) {
-  .featureItem {
-    padding: 1rem;
-  }
-  
-  .featureImage {
-    width: 96px;
-    height: 96px;
-  }
+[data-theme='dark'] .features {
+  background: #1a1a1a;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.sectionTitle {
+  background: #7c3aed;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
+  border: none;
 }
 
-.featureImage {
-  width: 128px;
-  height: 128px;
-  object-fit: contain;
+[data-theme='dark'] .sectionTitle {
+  background: #a78bfa;
+  color: #ffffff !important;
+  box-shadow: 0 8px 32px rgba(167, 139, 250, 0.3);
+}
+
+.featureCard {
   margin-bottom: 2rem;
 }
 
-.featureImage:hover {
-  transform: scale(1.1);
+.featureCardInner {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  border: none;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme='dark'] .featureCardInner {
+  background: #2a2a2a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.featureCardInner:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .featureCardInner:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.featureIconWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  display: block;
+}
+
+.featureSvg {
+  height: 64px;
+  width: 64px;
+}
+
+.featureContent {
+  width: 100%;
+}
+
+.featureTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #374151;
+}
+
+[data-theme='dark'] .featureTitle {
+  color: #f9fafb;
 }
 
 .featureDescription {
-  text-align: left;
-  padding-left: 5rem;
+  text-align: center;
+  padding: 0;
 }
 
-.content {
-  text-align: left;
-}
-
-.title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--ifm-color-primary);
-}
-
-.description {
+.featureDescription {
+  font-size: 0.95rem;
+  color: #6b7280;
   line-height: 1.6;
-  font-size: 0.9rem;
+}
+
+[data-theme='dark'] .featureDescription {
+  color: #d1d5db;
+}
+
+/* 响应式设计 */
+@media (max-width: 996px) {
+  .features {
+    padding: 2rem 0;
+  }
+  
+  .featureCardInner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .featureIconContainer {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .featureSvg {
+    height: 48px;
+    width: 48px;
+  }
+  
+  .featureStats {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .statItem {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .statNumber {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
 }

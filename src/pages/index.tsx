@@ -97,9 +97,9 @@ export default function Home(): ReactNode {
 
       {/* <TestCube /> */}
       <main>
-        <h2 className='home-title'>业务版图</h2>
+        {/* 业务版图 */}
         <HomepageFeatures />
-        <h2 className='home-title'>核心优势</h2>
+        {/* 核心优势 */}
         <HomepageAdvantages />
         <img
           src={require('@site/static/img/geekat-business.webp').default}

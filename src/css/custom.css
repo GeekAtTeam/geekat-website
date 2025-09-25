@@ -949,21 +949,11 @@ pre code {
   color: #ffffff;
 }
 
-/* 首页标题特殊样式 - 白色文字，紫色背景，圆角 */
-.home-title {
-  background: #a78bfa;
-  color: #ffffff !important;
-  padding: 16px 32px;
-  border-radius: 12px;
-  font-family: 'Courier New', 'Monaco', monospace !important;
-  font-weight: bold;
-  font-size: 1.8rem;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  margin: 2rem auto;
-  display: block;
-  width: fit-content;
+
+/* Shimmer动画定义 */
+@keyframes shimmer {
+  0%, 100% { background-position: 200% 0; }
+  50% { background-position: -200% 0; }
 }
 
 /* 汉堡菜单按钮使用默认样式 - 重置自定义样式但保留基本可见性 */

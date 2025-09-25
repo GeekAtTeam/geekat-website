@@ -1,27 +1,158 @@
 .advantages {
-  display: flex;
-  align-items: center;
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
+  background: #e2e8f0;
+  position: relative;
+}
+
+[data-theme='dark'] .advantages {
+  background: #0f172a;
+}
+
+.sectionTitle {
+  background: #7c3aed;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
+  border: none;
+}
+
+[data-theme='dark'] .sectionTitle {
+  background: #a78bfa;
+  color: #ffffff !important;
+  box-shadow: 0 8px 32px rgba(167, 139, 250, 0.3);
+}
+
+.advantageCard {
+  margin-bottom: 2rem;
+}
+
+.advantageCardInner {
+  background: rgba(255, 255, 255, 0.95);
+  border: none;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme='dark'] .advantageCardInner {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.advantageCardInner:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .advantageCardInner:hover {
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.advantageIconWrapper {
+  margin-bottom: 1.5rem;
+}
+
+.advantageIcon {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto;
+  display: block;
 }
 
 .advantageSvg {
-  height: 200px;
-  width: 200px;
+  height: 48px;
+  width: 48px;
 }
 
-.advantageImage {
-  width: 128px;
-  height: 128px;
-  object-fit: contain;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
+.advantageContent {
+  width: 100%;
 }
 
-.advantageImage:hover {
-  transform: scale(1.1);
+.advantageTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+[data-theme='dark'] .advantageTitle {
+  color: #f9fafb;
 }
 
 .advantageDescription {
-  text-align: left;
+  text-align: center;
+  padding: 0;
+}
+
+.advantageDescription {
+  font-size: 0.95rem;
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+[data-theme='dark'] .advantageDescription {
+  color: #d1d5db;
+}
+
+/* 响应式设计 */
+@media (max-width: 996px) {
+  .advantages {
+    padding: 2rem 0;
+  }
+  
+  .advantageCardInner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .advantageIconContainer {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .advantageSvg {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .advantageText {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .advantageCard {
+    margin-bottom: 1.5rem;
+  }
+  
+  .advantageCardInner {
+    padding: 1.5rem 1rem;
+  }
+  
+  .advantageTitle {
+    font-size: 1.1rem;
+  }
+  
+  .advantageHighlight {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .advantageText {
+    font-size: 0.9rem;
+  }
 }
