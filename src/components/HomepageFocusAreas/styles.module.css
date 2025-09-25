@@ -37,26 +37,63 @@
   aspect-ratio: 2/3;
 }
 
-/* 中等屏幕：每行2个卡片，2:3比例 */
-@media (max-width: 996px) {
+/* 为每行4个卡片添加高低不一的效果 */
+.focusAreaCard:nth-child(1) {
+  transform: translateY(0px);
+}
+
+.focusAreaCard:nth-child(2) {
+  transform: translateY(20px);
+}
+
+.focusAreaCard:nth-child(3) {
+  transform: translateY(0px);
+}
+
+.focusAreaCard:nth-child(4) {
+  transform: translateY(20px);
+}
+
+.focusAreaCard:nth-child(5) {
+  transform: translateY(0px);
+}
+
+.focusAreaCard:nth-child(6) {
+  transform: translateY(20px);
+}
+
+.focusAreaCard:nth-child(7) {
+  transform: translateY(0px);
+}
+
+.focusAreaCard:nth-child(8) {
+  transform: translateY(20px);
+}
+
+/* 中等屏幕：每行2个卡片，保持2:3比例，取消高低效果 */
+@media (max-width: 840px) {
   .focusAreaCard {
     width: calc(50% - 1rem);
     flex: 0 0 calc(50% - 1rem);
+    aspect-ratio: 2/3;
+    transform: translateY(0) !important;
   }
 }
 
-/* 小屏幕：每行1个卡片，2:3比例 */
-@media (max-width: 768px) {
+/* 小屏幕：每行1个卡片，保持2:3比例，取消高低效果 */
+@media (max-width: 500px) {
   .focusAreaCard {
     width: 100%;
     flex: 0 0 100%;
+    aspect-ratio: 2/3;
+    transform: translateY(0) !important;
   }
 }
 
 .focusAreaCardInner {
   position: relative;
-  height: 420px;
-  border-radius: 16px;
+  height: 100%;
+  border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -68,7 +105,7 @@
 }
 
 .focusAreaCardInner:hover {
-  transform: translateY(-8px);
+  /* transform: translateY(-8px); */
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
 }
 
@@ -89,7 +126,7 @@
 }
 
 .focusAreaCardInner:hover .focusAreaImage {
-  transform: scale(1.05);
+  transform: scale(1.0);
 }
 
 .focusAreaIconWrapper {
@@ -177,13 +214,13 @@
 }
 
 /* 响应式设计 */
-@media (max-width: 996px) {
+@media (max-width: 840px) {
   .focusAreas {
     padding: 2rem 0;
   }
   
   .focusAreaCardInner {
-    height: 360px;
+    height: 100%;
   }
   
   .focusAreaIconWrapper {
@@ -215,13 +252,13 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 500) {
   .focusAreaCard {
     margin-bottom: 1.5rem;
   }
   
   .focusAreaCardInner {
-    height: 300px;
+    height: 100%;
   }
   
   .focusAreaIconWrapper {
