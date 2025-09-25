@@ -93,7 +93,7 @@ export default function Home(): ReactNode {
                 left: '50%',
                 transform: 'translateX(-50%)',
                 width: '3px',
-                height: '8px',
+                height: '10px',
                 background: '#ffffff',
                 borderRadius: '2px',
                 animation: 'scrollWheel 2s ease-in-out infinite'
