@@ -16,7 +16,11 @@ const FeatureList: FeatureItem[] = [
     icon: 'img/embedded-icon.png',
     description: (
       <div className={styles.featureDescription}>
-        ✅ 嵌入式系统定制开发<br/>✅ 边缘计算设备研发<br/>✅ 传感器融合解决方案
+        <ul>
+          <li>嵌入式系统定制开发</li>
+          <li>边缘计算设备研发</li>
+          <li>传感器融合解决方案</li>
+        </ul>
       </div>
     ),
   },
@@ -25,7 +29,11 @@ const FeatureList: FeatureItem[] = [
     icon: 'img/digital-icon.png',
     description: (
       <div className={styles.featureDescription}>
-        ✅ 企业级中间件开发<br/>✅ 跨平台App/小程序开发<br/>✅ 微服务架构设计与实施
+        <ul>
+          <li>企业级中间件开发</li>
+          <li>跨平台App/小程序开发</li>
+          <li>微服务架构设计与实施</li>
+        </ul>
       </div>
     ),
   },
@@ -34,7 +42,11 @@ const FeatureList: FeatureItem[] = [
     icon: 'img/certification-icon.png',
     description: (
       <div className={styles.featureDescription}>
-        ✅ 嵌入式开发实战培训<br/>✅ 物联网架构师认证<br/>✅ 企业技术转型咨询
+        <ul>
+          <li>嵌入式开发实战培训</li>
+          <li>物联网架构师认证</li>
+          <li>企业技术转型咨询</li>
+        </ul>
       </div>
     ),
   },

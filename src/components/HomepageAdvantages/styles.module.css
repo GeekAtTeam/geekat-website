@@ -32,6 +32,25 @@
 
 .advantageCard {
   margin-bottom: 2rem;
+  /* 默认：大屏幕每行4个卡片 */
+  width: 25%;
+  flex: 0 0 25%;
+}
+
+/* 中等屏幕：每行2个卡片 */
+@media (max-width: 996px) {
+  .advantageCard {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+/* 小屏幕：每行1个卡片 */
+@media (max-width: 768px) {
+  .advantageCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
 }
 
 .advantageCardInner {
@@ -131,6 +150,27 @@
   
   .advantageText {
     text-align: center;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 996px) {
+  .advantages {
+    padding: 2rem 0;
+  }
+  
+  .advantageCardInner {
+    padding: 2rem 1.5rem;
+  }
+  
+  .advantageIconWrapper {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .advantageIcon {
+    width: 45px;
+    height: 45px;
   }
 }
 

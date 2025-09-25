@@ -107,6 +107,19 @@
   color: #d1d5db;
 }
 
+/* 自定义列表样式 */
+.featureDescription ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.featureDescription li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
 /* 响应式设计 */
 @media (max-width: 996px) {
   .features {

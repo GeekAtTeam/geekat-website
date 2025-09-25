@@ -51,7 +51,7 @@ const AdvantageList: AdvantageItem[] = [
 
 function Advantage({title, icon, description}: AdvantageItem) {
   return (
-    <div className={clsx('col col--3', styles.advantageCard)}>
+    <div className={clsx('col', styles.advantageCard)}>
       <div className={styles.advantageCardInner}>
         <div className={styles.advantageIconWrapper}>
           <img src={useBaseUrl(icon)} alt={title} className={styles.advantageIcon} />
