@@ -117,6 +117,10 @@ const config: Config = {
               to: '/products',
             },
             {
+              label: '文档中心',
+              to: '/docs',
+            },
+            {
               label: '新闻资讯',
               to: '/news',
             },
