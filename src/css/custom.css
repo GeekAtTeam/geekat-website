@@ -297,6 +297,59 @@
   box-shadow: none;
 }
 
+/* 强制响应式导航栏 - 覆盖所有可能的样式 */
+@media screen and (max-width: 996px) {
+  /* 隐藏左侧菜单项 - 使用多重选择器确保生效 */
+  .navbar__items--left,
+  .navbar .navbar__items--left,
+  .navbar .navbar__inner .navbar__items--left,
+  .navbar .navbar__inner .navbar__items .navbar__items--left {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    transform: scale(0) !important;
+  }
+  
+  /* 隐藏菜单项 */
+  .navbar__item,
+  .navbar .navbar__items--left .navbar__item,
+  .navbar .navbar__inner .navbar__items--left .navbar__item {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    left: -9999px !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    transform: scale(0) !important;
+  }
+  
+  /* 显示汉堡菜单按钮 */
+  .navbar__toggle {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+}
+
+@media screen and (min-width: 997px) {
+  /* 桌面端隐藏汉堡菜单按钮 */
+  .navbar__toggle {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+  }
+}
+
+
 /* 移除所有下划线效果 */
 .navbar__link::before,
 .navbar__link::after,
