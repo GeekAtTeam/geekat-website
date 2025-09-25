@@ -98,6 +98,7 @@ const config: Config = {
         // },
         {to: '/products', label: '产品中心', position: 'left'},
         {to: '/news', label: '新闻资讯', position: 'left'},
+        {to: '/whiteboard', label: '在线白板', position: 'left'},
         // {
         //   href: 'https://github.com/GeekAtTeam',
         //   label: 'GitHub',
