@@ -87,17 +87,19 @@ export default function Home(): ReactNode {
               opacity: 1.0
             }}>
               {/* 鼠标滚轮动画 */}
-              <div style={{
-                position: 'absolute',
-                top: '8px',
-                left: '50%',
-                transform: 'translateX(-50%)',
-                width: '3px',
-                height: '10px',
-                background: '#ffffff',
-                borderRadius: '2px',
-                animation: 'scrollWheel 2s ease-in-out infinite'
-              }} />
+              <div 
+                className="scroll-wheel"
+                style={{
+                  position: 'absolute',
+                  top: '8px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  width: '3px',
+                  height: '10px',
+                  background: '#ffffff',
+                  borderRadius: '2px'
+                }} 
+              />
             </div>
             <div style={{
               color: '#ffffff',

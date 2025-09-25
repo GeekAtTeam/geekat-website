@@ -972,6 +972,61 @@ pre code {
   }
 }
 
+/* 确保动画在所有浏览器中工作 */
+@-webkit-keyframes scrollWheel {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  50% {
+    top: 24px;
+    opacity: 0.3;
+  }
+  100% {
+    top: 32px;
+    opacity: 0;
+  }
+}
+
+@-moz-keyframes scrollWheel {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  50% {
+    top: 24px;
+    opacity: 0.3;
+  }
+  100% {
+    top: 32px;
+    opacity: 0;
+  }
+}
+
+@-o-keyframes scrollWheel {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  50% {
+    top: 24px;
+    opacity: 0.3;
+  }
+  100% {
+    top: 32px;
+    opacity: 0;
+  }
+}
+
+/* 鼠标滚轮动画类 - 确保在部署后也能正常工作 */
+.scroll-wheel {
+  -webkit-animation: scrollWheel 2s ease-in-out infinite !important;
+  -moz-animation: scrollWheel 2s ease-in-out infinite !important;
+  -o-animation: scrollWheel 2s ease-in-out infinite !important;
+  animation: scrollWheel 2s ease-in-out infinite !important;
+  will-change: top, opacity !important;
+}
+
 /* 汉堡菜单按钮使用默认样式 - 重置自定义样式但保留基本可见性 */
 .navbar__toggle {
   all: initial !important;
