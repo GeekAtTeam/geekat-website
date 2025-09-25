@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 2rem;
   text-align: center;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 4rem auto;
   display: block;
   width: fit-content;
   box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
@@ -71,7 +71,7 @@
 }
 
 /* 中等屏幕：每行2个卡片，保持2:3比例，取消高低效果 */
-@media (max-width: 840px) {
+@media (max-width: 888px) {
   .focusAreaCard {
     width: calc(50% - 1rem);
     flex: 0 0 calc(50% - 1rem);
@@ -177,14 +177,13 @@
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.85);
-  padding: 4rem 1.5rem 1.5rem;
+  padding: 2rem 1.5rem 1.5rem;
   transform: translateY(100%);
   transition: transform 0.4s ease;
   z-index: 2;
 }
 
 .focusAreaTitle {
-  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -192,11 +191,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
-  padding: 1.5rem 1.5rem 0;
-  z-index: 3;
-  transform: translateY(100%);
-  transition: transform 0.4s ease;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 
 .focusAreaCardInner:hover .focusAreaTitle {
@@ -216,7 +211,7 @@
 }
 
 /* 响应式设计 */
-@media (max-width: 840px) {
+@media (max-width: 888px) {
   .focusAreas {
     padding: 2rem 0;
   }
@@ -243,7 +238,7 @@
   }
   
   .focusAreaDescription {
-    padding: 3.5rem 1rem 1rem;
+    padding: 1.5rem 1rem 1rem;
   }
   
   .focusAreaIcon {
@@ -288,7 +283,7 @@
   }
   
   .focusAreaDescription {
-    padding: 2.8rem 0.8rem 0.8rem;
+    padding: 1.8rem 0.8rem 0.8rem;
   }
   
   .focusAreaDescription p {

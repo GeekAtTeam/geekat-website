@@ -78,13 +78,11 @@ function FocusArea({title, icon, description, image}: FocusAreaItem) {
           <img src={useBaseUrl(icon)} alt={title} className={styles.focusAreaIcon} />
         </div>
         
-        {/* 标题 */}
-        <div className={styles.focusAreaTitle}>
-          {title}
-        </div>
-        
         {/* 描述抽屉 */}
         <div className={styles.focusAreaDescription}>
+          {/* 标题 */}
+          <div className={styles.focusAreaTitle}>{title}</div>
+          {/* 描述 */}
           <p>{description}</p>
         </div>
       </div>
