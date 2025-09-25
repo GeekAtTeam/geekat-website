@@ -24,6 +24,19 @@
   margin-right: auto;
 }
 
+/* 产品卡片链接样式 */
+.productCardLink {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+.productCardLink:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* 产品卡片样式 */
 .productCard {
   background: #ffffff;
@@ -35,6 +48,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  cursor: pointer;
 }
 
 [data-theme='dark'] .productCard {
@@ -42,12 +56,12 @@
   border-color: #374151;
 }
 
-.productCard:hover {
+.productCardLink:hover .productCard {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme='dark'] .productCard:hover {
+[data-theme='dark'] .productCardLink:hover .productCard {
   box-shadow: 0 10px 25px rgba(167, 139, 250, 0.2);
 }
 
@@ -124,6 +138,7 @@
 [data-theme='dark'] .price {
   color: #10b981;
 }
+
 
 /* 响应式布局调整 - 产品卡片列数控制 */
 

@@ -22,35 +22,31 @@ export default function ProductsList({products}) {
         <div className="row">
           {productList.map((product) => (
             <div key={product.id} className="col col--4 margin-bottom--lg">
-              <div className={styles.productCard}>
-                <div className={styles.productImage}>
-                  {product.image && (
-                    <img
-                      src={useBaseUrl(product.image)}
-                      alt={product.name}
-                      className={styles.image}
-                    />
-                  )}
-                </div>
-                <div className={styles.productContent}>
-                  <h3 className={styles.productTitle}>{product.name}</h3>
-                  <p className={styles.productDescription}>
-                    {product.summary || product.description}
-                  </p>
-                  <div className={styles.productMeta}>
-                    <span className={styles.category}>{product.category}</span>
-                    {product.price && (
-                      <span className={styles.price}>{product.price}</span>
+              <Link to={`/products/${product.id}`} className={styles.productCardLink}>
+                <div className={styles.productCard}>
+                  <div className={styles.productImage}>
+                    {product.image && (
+                      <img
+                        src={useBaseUrl(product.image)}
+                        alt={product.name}
+                        className={styles.image}
+                      />
                     )}
                   </div>
-                  <Link
-                    className="button button--primary button--block"
-                    to={`/products/${product.id}`}
-                  >
-                    了解详情
-                  </Link>
+                  <div className={styles.productContent}>
+                    <h3 className={styles.productTitle}>{product.name}</h3>
+                    <p className={styles.productDescription}>
+                      {product.summary || product.description}
+                    </p>
+                    <div className={styles.productMeta}>
+                      <span className={styles.category}>{product.category}</span>
+                      {product.price && (
+                        <span className={styles.price}>{product.price}</span>
+                      )}
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>
