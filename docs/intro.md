@@ -1,5 +1,5 @@
 ---
-title: 产品中心
+title: 文档中心
 sidebar_position: 1
 ---
 
