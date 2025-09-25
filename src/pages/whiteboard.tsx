@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Layout from '@theme/Layout';
 
-export default function Whiteboard(): JSX.Element {
+export default function Whiteboard(): React.JSX.Element {
   useEffect(() => {
     // 检测当前主题模式并传递给iframe
     const theme = document.documentElement.getAttribute('data-theme');
@@ -19,7 +19,13 @@ export default function Whiteboard(): JSX.Element {
     <Layout
       title="白板"
       description="在线协作白板 - 创建手绘风格的图表和草图">
-      <div style={{ height: '100vh', width: '100%', margin: 0, padding: 0 }}>
+      <div style={{ 
+        height: 'calc(100vh - 60px)', // 减去导航栏高度
+        width: '100%', 
+        margin: 0, 
+        padding: 0,
+        marginTop: '60px' // 从导航栏下方开始
+      }}>
         <iframe
           id="excalidraw-iframe"
           src="https://excalidraw.com"
