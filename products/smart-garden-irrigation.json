@@ -1,7 +1,7 @@
 {
   "id": "smart-garden-irrigation",
   "name": "花园自动浇灌系统",
-  "category": "物联网",
+  "category": "物联网系统",
   "summary": "基于土壤湿度传感器的智能花园浇灌系统，支持远程控制、定时浇灌和智能预警，让您的花园始终保持最佳状态。",
   "description": "基于土壤湿度传感器的智能花园浇灌系统，支持远程控制、定时浇灌和智能预警，让您的花园始终保持最佳状态。",
   "image": "/img/products/smart-garden-irrigation.webp",
