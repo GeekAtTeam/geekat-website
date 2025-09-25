@@ -139,6 +139,173 @@
   color: #10b981;
 }
 
+/* 筛选器样式 */
+.filterContainer {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+[data-theme='dark'] .filterContainer {
+  background: #1f2937;
+  border-color: #374151;
+}
+
+.filterWrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filterLabel {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+[data-theme='dark'] .filterLabel {
+  color: #d1d5db;
+}
+
+/* 自定义下拉框样式 */
+.customDropdown {
+  position: relative;
+  min-width: 150px;
+}
+
+.dropdownButton {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  color: #374151;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  outline: none;
+}
+
+[data-theme='dark'] .dropdownButton {
+  background: #374151;
+  border-color: #4b5563;
+  color: #d1d5db;
+}
+
+.dropdownButton:hover {
+  border-color: #a78bfa;
+  background: #faf5ff;
+}
+
+[data-theme='dark'] .dropdownButton:hover {
+  border-color: #a78bfa;
+  background: #140b20;
+}
+
+.dropdownButton:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+[data-theme='dark'] .dropdownButton:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+.dropdownArrow {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+[data-theme='dark'] .dropdownMenu {
+  background: #374151;
+  border-color: #4b5563;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.dropdownItem {
+  background: transparent;
+  border: none;
+  color: #374151;
+  padding: 0.75rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: left;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+[data-theme='dark'] .dropdownItem {
+  color: #d1d5db;
+  border-bottom-color: #4b5563;
+}
+
+.dropdownItem:last-child {
+  border-bottom: none;
+}
+
+.dropdownItem:hover {
+  background: #a78bfa;
+  color: #ffffff;
+}
+
+[data-theme='dark'] .dropdownItem:hover {
+  background: #7c3aed;
+  color: #ffffff;
+}
+
+.dropdownItemActive {
+  background: #a78bfa;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+[data-theme='dark'] .dropdownItemActive {
+  background: #7c3aed;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.filterStats {
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+[data-theme='dark'] .filterStats {
+  color: #9ca3af;
+}
+
 
 /* 响应式布局调整 - 产品卡片列数控制 */
 
@@ -187,5 +354,22 @@
   :global(.col--4) {
     flex: 0 0 100% !important;
     max-width: 100% !important;
+  }
+  
+  /* 筛选器响应式样式 */
+  .filterContainer {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .filterWrapper {
+    justify-content: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .customDropdown {
+    min-width: 200px;
   }
 }
