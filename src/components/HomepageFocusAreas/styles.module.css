@@ -1,0 +1,246 @@
+.focusAreas {
+  padding: 4rem 0;
+  width: 100%;
+  background: #f8fafc;
+}
+
+[data-theme='dark'] .focusAreas {
+  background: #1a1a1a;
+}
+
+.sectionTitle {
+  background: #7c3aed;
+  color: #ffffff;
+  padding: 1.5rem 3rem;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0 auto 3rem auto;
+  display: block;
+  width: fit-content;
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.3);
+  border: none;
+}
+
+[data-theme='dark'] .sectionTitle {
+  background: #a78bfa;
+  color: #ffffff !important;
+  box-shadow: 0 8px 32px rgba(167, 139, 250, 0.3);
+}
+
+.focusAreaCard {
+  margin-bottom: 2rem;
+  /* 默认：大屏幕每行4个卡片，2:3比例 */
+  width: calc(25% - 1rem);
+  flex: 0 0 calc(25% - 1rem);
+  aspect-ratio: 2/3;
+}
+
+/* 中等屏幕：每行2个卡片，2:3比例 */
+@media (max-width: 996px) {
+  .focusAreaCard {
+    width: calc(50% - 1rem);
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+/* 小屏幕：每行1个卡片，2:3比例 */
+@media (max-width: 768px) {
+  .focusAreaCard {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}
+
+.focusAreaCardInner {
+  position: relative;
+  height: 420px;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] .focusAreaCardInner {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.focusAreaCardInner:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme='dark'] .focusAreaCardInner:hover {
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.focusAreaImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease;
+}
+
+.focusAreaCardInner:hover .focusAreaImage {
+  transform: scale(1.05);
+}
+
+.focusAreaIconWrapper {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+[data-theme='dark'] .focusAreaIconWrapper {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.focusAreaCardInner:hover .focusAreaIconWrapper {
+  transform: translateX(-50%) translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.focusAreaIcon {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) saturate(100%) invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+  transition: filter 0.3s ease;
+}
+
+[data-theme='dark'] .focusAreaIcon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.focusAreaCardInner:hover .focusAreaIcon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
+}
+
+.focusAreaTitle {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: all 0.3s ease;
+}
+
+.focusAreaCardInner:hover .focusAreaTitle {
+  transform: translateX(-50%) translateY(-10px);
+}
+
+.focusAreaDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+  padding: 2rem 1.5rem 1.5rem;
+  transform: translateY(100%);
+  transition: transform 0.4s ease;
+  z-index: 3;
+}
+
+.focusAreaCardInner:hover .focusAreaDescription {
+  transform: translateY(0);
+}
+
+.focusAreaDescription p {
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+/* 响应式设计 */
+@media (max-width: 996px) {
+  .focusAreas {
+    padding: 2rem 0;
+  }
+  
+  .focusAreaCardInner {
+    height: 360px;
+  }
+  
+  .focusAreaIconWrapper {
+    width: 50px;
+    height: 50px;
+    top: 15px;
+  }
+  
+  .focusAreaIcon {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .focusAreaTitle {
+    font-size: 1.3rem;
+    bottom: 15px;
+  }
+  
+  .focusAreaDescription {
+    padding: 1.5rem 1rem 1rem;
+  }
+  
+  .focusAreaDescription p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .focusAreaCard {
+    margin-bottom: 1.5rem;
+  }
+  
+  .focusAreaCardInner {
+    height: 300px;
+  }
+  
+  .focusAreaIconWrapper {
+    width: 45px;
+    height: 45px;
+    top: 12px;
+  }
+  
+  .focusAreaIcon {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .focusAreaTitle {
+    font-size: 1.2rem;
+    bottom: 12px;
+  }
+  
+  .focusAreaDescription {
+    padding: 1.2rem 0.8rem 0.8rem;
+  }
+  
+  .focusAreaDescription p {
+    font-size: 0.85rem;
+  }
+}

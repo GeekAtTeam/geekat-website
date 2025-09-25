@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageAdvantages from '@site/src/components/HomepageAdvantages';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import HomepageFocusAreas from '@site/src/components/HomepageFocusAreas';
 import Heading from '@theme/Heading';
 import SpaceBackground from '@site/src/components/SpaceBackground';
 // import TestCube from '@site/src/components/TestCube';
@@ -131,11 +132,8 @@ export default function Home(): ReactNode {
         <HomepageFeatures />
         {/* 核心优势 */}
         <HomepageAdvantages />
-        <img
-          src={require('@site/static/img/geekat-business.webp').default}
-          alt="极客艾特覆盖行业解决方案"
-          className={styles.topBanner}
-        />
+        {/* 关注领域 */}
+        <HomepageFocusAreas />
       </main>
     </Layout>
   );
