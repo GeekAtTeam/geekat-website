@@ -145,11 +145,11 @@
   text-align: center;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   z-index: 2;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 
 .focusAreaCardInner:hover .focusAreaTitle {
-  transform: translateX(-50%) translateY(-10px);
+  transform: translateX(-50%) translateY(-200px);
 }
 
 .focusAreaDescription {
@@ -157,7 +157,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.9) 100%);
+  background: rgba(0, 0, 0, 0.85);
   padding: 2rem 1.5rem 1.5rem;
   transform: translateY(100%);
   transition: transform 0.4s ease;
@@ -202,6 +202,10 @@
     bottom: 15px;
   }
   
+  .focusAreaCardInner:hover .focusAreaTitle {
+    transform: translateX(-50%) translateY(-180px);
+  }
+  
   .focusAreaDescription {
     padding: 1.5rem 1rem 1rem;
   }
@@ -234,6 +238,10 @@
   .focusAreaTitle {
     font-size: 1.2rem;
     bottom: 12px;
+  }
+  
+  .focusAreaCardInner:hover .focusAreaTitle {
+    transform: translateX(-50%) translateY(-160px);
   }
   
   .focusAreaDescription {
