@@ -1,0 +1,42 @@
+/* 白板页面样式 - 使用CSS变量动态调整 */
+.whiteboardContainer {
+  position: fixed;
+  top: var(--navbar-height, 0px);
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - var(--navbar-height, 0px));
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+}
+
+.whiteboardIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+/* 确保白板容器不会产生额外的边距或填充 */
+.whiteboardContainer * {
+  box-sizing: border-box;
+}
+
+/* 针对不同设备的特殊处理 */
+@media screen and (max-width: 996px) {
+  /* 移动设备和iPad - 使用CSS变量 */
+  .whiteboardContainer {
+    top: var(--navbar-height, 0px);
+    height: calc(100vh - var(--navbar-height, 0px));
+  }
+}
+
+@media screen and (min-width: 997px) {
+  /* 桌面端 - 使用CSS变量，如果没有设置则使用默认值 */
+  .whiteboardContainer {
+    top: var(--navbar-height, 60px);
+    height: calc(100vh - var(--navbar-height, 60px));
+  }
+}
