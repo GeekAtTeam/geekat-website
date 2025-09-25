@@ -21,12 +21,14 @@ export default function Contact() {
                 <h3>公司名称</h3>
                 <p>广州极客艾特计算机系统有限公司</p>
               </div>
-              
               <div className={styles.infoItem}>
                 <h3>联系邮箱</h3>
                 <p>service@geekat.cn</p>
               </div>
-              
+              <div className={styles.infoItem}>
+                <h3>微信客服</h3>
+                <p>Archimedong</p>
+              </div>
               <div className={styles.infoItem}>
                 <h3>主营业务</h3>
                 <ul>

@@ -172,6 +172,10 @@ const config: Config = {
               to: '/about',
             },
             {
+              label: '联系我们',
+              to: '/contact',
+            },
+            {
               label: 'GitHub',
               href: 'https://github.com/GeekAtTeam',
             },
