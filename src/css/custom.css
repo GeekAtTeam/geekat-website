@@ -912,3 +912,51 @@ pre code {
   display: block;
   width: fit-content;
 }
+
+/* 汉堡菜单按钮使用默认样式 - 重置自定义样式但保留基本可见性 */
+.navbar__toggle {
+  all: initial !important;
+  display: block !important;
+  cursor: pointer !important;
+  color: inherit !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0.5rem !important;
+  font-size: 1.25rem !important;
+}
+
+.navbar__toggle:hover {
+  all: initial !important;
+  display: block !important;
+  cursor: pointer !important;
+  color: inherit !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 0.5rem !important;
+  font-size: 1.25rem !important;
+}
+
+/* Dark模式下确保汉堡菜单按钮可见 */
+[data-theme='dark'] .navbar__toggle {
+  color: #ffffff !important;
+}
+
+[data-theme='dark'] .navbar__toggle:hover {
+  color: #ffffff !important;
+}
+
+/* Light模式下确保汉堡菜单按钮可见 */
+.navbar__toggle {
+  color: #000000 !important;
+}
+
+.navbar__toggle:hover {
+  color: #000000 !important;
+}
+
+/* 确保在桌面端隐藏汉堡菜单按钮 */
+@media (min-width: 997px) {
+  .navbar__toggle {
+    display: none !important;
+  }
+}
