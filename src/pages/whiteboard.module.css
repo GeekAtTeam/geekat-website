@@ -7,7 +7,7 @@
   height: calc(100vh - var(--navbar-height, 0px));
   margin: 0;
   padding: 0;
-  z-index: 9999;
+  z-index: 1; /* 设置最低z-index，确保导航栏菜单始终在画布上方 */
 }
 
 .whiteboardIframe {
