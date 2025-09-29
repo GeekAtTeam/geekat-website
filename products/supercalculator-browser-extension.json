@@ -1,0 +1,135 @@
+{
+  "id": "supercalculator-browser-extension",
+  "name": "SuperCalculator",
+  "summary": "超级计算器浏览器插件，集成计算和换算两大功能，支持科学计算、单位换算、房贷计算等实用功能。",
+  "description": "SuperCalculator 是一款功能强大的浏览器插件，提供完整的计算和换算解决方案。计算功能包括基础四则运算和高级科学计算，换算功能涵盖单位换算、房贷计算、汇率换算、BMI计算等多种实用工具，满足日常工作和学习中的各种计算需求。",
+  "category": "浏览器插件",
+  "price": "免费",
+  "image": "img/products/supercalculator-banner.webp",
+  "qrcode": "",
+  "features": [
+    "基础四则运算计算器",
+    "高级科学计算功能",
+    "多种单位换算支持",
+    "房贷计算器",
+    "汇率实时换算",
+    "BMI健康指数计算",
+    "面积、长度、重量换算",
+    "温度单位转换",
+    "时间计算器",
+    "百分比计算",
+    "快捷键快速调用",
+    "计算结果历史记录",
+    "简洁直观的用户界面",
+    "跨浏览器兼容性",
+    "离线计算支持"
+  ],
+  "specifications": {
+    "平台": "浏览器插件",
+    "支持浏览器": "Chrome、Firefox、Edge、Safari",
+    "计算精度": "高精度浮点运算",
+    "操作系统": "Windows、macOS、Linux",
+    "文件大小": "< 2MB",
+    "权限要求": "本地存储权限、网络访问权限（汇率）",
+    "更新频率": "定期更新",
+    "开源状态": "开源项目"
+  },
+  "benefits": [
+    "一站式计算解决方案",
+    "提升日常计算效率",
+    "支持复杂的科学计算",
+    "多种实用换算工具",
+    "实时汇率数据",
+    "历史记录功能",
+    "快捷键快速访问",
+    "界面简洁易用",
+    "离线使用支持",
+    "持续功能更新"
+  ],
+  "useCases": [
+    "日常数学计算",
+    "科学研究和工程计算",
+    "财务规划和房贷计算",
+    "单位换算和测量",
+    "健康指标监测",
+    "汇率换算和金融计算",
+    "学生作业和考试",
+    "专业工程师计算",
+    "商业数据分析",
+    "个人理财管理"
+  ],
+  "targetAudience": [
+    "学生和教师",
+    "工程师和科研人员",
+    "财务分析师",
+    "普通办公人员",
+    "程序员和开发者",
+    "商务人士",
+    "健康管理师",
+    "对计算有需求的用户",
+    "经常需要换算的用户"
+  ],
+  "technicalDetails": {
+    "开发技术": "JavaScript、HTML5、CSS3、Web API",
+    "架构模式": "浏览器扩展API",
+    "数据存储": "本地存储 + 网络API",
+    "性能优化": "高效计算算法",
+    "兼容性": "现代浏览器支持",
+    "安全性": "本地计算，数据安全"
+  },
+  "contact": {
+    "github": "https://github.com/GeekAtTeam/SuperCalculator",
+    "email": "service@geekat.com",
+    "issues": "https://github.com/GeekAtTeam/SuperCalculator/issues"
+  },
+  "downloads": [
+    {
+      "name": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/search/supercalculator",
+      "type": "Chrome扩展"
+    },
+    {
+      "name": "Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/search/supercalculator",
+      "type": "Edge扩展"
+    },
+    {
+      "name": "Firefox Add-ons",
+      "url": "https://addons.mozilla.org/firefox/addon/supercalculator",
+      "type": "Firefox插件"
+    },
+    {
+      "name": "GitHub Releases",
+      "url": "https://github.com/GeekAtTeam/SuperCalculator/releases",
+      "type": "源码下载"
+    }
+  ],
+  "tags": ["浏览器插件", "计算器", "科学计算", "单位换算", "房贷计算", "汇率换算", "BMI计算", "开源", "Chrome", "Firefox", "Edge"],
+  "status": "开发中",
+  "launchDate": "2024-12-01",
+  "version": "v0.9.0",
+  "downloadCount": "即将上线",
+  "rating": "即将上线",
+  "reviews": [
+    {
+      "user": "数学老师李老师",
+      "rating": 5,
+      "comment": "期待这个插件很久了！功能全面，从基础计算到科学计算都有，对教学很有帮助。"
+    },
+    {
+      "user": "工程师王工",
+      "rating": 5,
+      "comment": "作为一个经常需要各种计算的工程师，这个插件集成了我需要的所有功能，非常实用。"
+    },
+    {
+      "user": "财务专员小陈",
+      "rating": 4,
+      "comment": "房贷计算和汇率换算功能很实用，界面简洁，操作方便，期待正式上线。"
+    }
+  ],
+  "screenshots": [
+    "img/products/supercalculator-screenshot-1.png",
+    "img/products/supercalculator-screenshot-2.png",
+    "img/products/supercalculator-screenshot-3.png"
+  ]
+}
