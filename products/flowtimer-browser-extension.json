@@ -1,0 +1,136 @@
+{
+  "id": "flowtimer-browser-extension",
+  "name": "FlowTimer",
+  "summary": "高效轻量的番茄钟浏览器插件，专为提升注意力和生产力而设计，帮助用户建立高效的工作节奏。",
+  "description": "FlowTimer 是一款专为提升注意力和生产力而设计的番茄钟浏览器插件。基于番茄工作法原理，通过25分钟专注工作+5分钟休息的循环模式，帮助用户建立高效的工作节奏。界面简洁美观，功能轻量实用，支持自定义时间设置、任务管理、统计分析和多种提醒方式，是提升工作效率的必备工具。",
+  "category": "浏览器插件",
+  "price": "免费",
+  "image": "img/products/flowtimer-banner.webp",
+  "qrcode": "",
+  "features": [
+    "标准番茄钟计时器（25分钟工作+5分钟休息）",
+    "自定义时间设置",
+    "任务列表管理",
+    "工作统计和分析",
+    "多种提醒方式（声音、通知、视觉）",
+    "休息提醒和长休息",
+    "工作模式切换",
+    "每日目标设定",
+    "历史记录查看",
+    "专注模式（屏蔽干扰）",
+    "快捷键操作",
+    "数据导出功能",
+    "简洁美观的界面",
+    "跨浏览器兼容性",
+    "离线使用支持"
+  ],
+  "specifications": {
+    "平台": "浏览器插件",
+    "支持浏览器": "Chrome、Firefox、Edge、Safari",
+    "计时精度": "秒级精度",
+    "操作系统": "Windows、macOS、Linux",
+    "文件大小": "< 1.5MB",
+    "权限要求": "本地存储权限、通知权限、音频权限",
+    "更新频率": "定期更新",
+    "开源状态": "开源项目"
+  },
+  "benefits": [
+    "提升专注力和工作效率",
+    "建立健康的工作节奏",
+    "减少工作压力和疲劳",
+    "培养良好的时间管理习惯",
+    "量化工作成果",
+    "提高任务完成质量",
+    "增强自律能力",
+    "改善工作生活平衡",
+    "数据驱动的自我改进",
+    "团队协作效率提升"
+  ],
+  "useCases": [
+    "专注学习和工作",
+    "项目管理时间控制",
+    "写作和创作工作",
+    "编程和开发任务",
+    "阅读和研究",
+    "会议和讨论时间管理",
+    "健身和运动计时",
+    "冥想和放松练习",
+    "考试复习规划",
+    "日常任务管理"
+  ],
+  "targetAudience": [
+    "学生和研究人员",
+    "程序员和开发者",
+    "自由职业者和远程工作者",
+    "企业员工和经理",
+    "作家和内容创作者",
+    "设计师和艺术家",
+    "项目管理师",
+    "希望提高效率的用户",
+    "时间管理爱好者",
+    "专注力训练者"
+  ],
+  "technicalDetails": {
+    "开发技术": "JavaScript、HTML5、CSS3、Web Audio API",
+    "架构模式": "浏览器扩展API + 本地存储",
+    "数据存储": "本地存储 + 可选云端同步",
+    "性能优化": "轻量级设计，低资源占用",
+    "兼容性": "现代浏览器支持",
+    "安全性": "本地数据处理，隐私保护"
+  },
+  "contact": {
+    "github": "https://github.com/GeekAtTeam/FlowTimer",
+    "email": "service@geekat.com",
+    "issues": "https://github.com/GeekAtTeam/FlowTimer/issues"
+  },
+  "downloads": [
+    {
+      "name": "Chrome Web Store",
+      "url": "https://chromewebstore.google.com/search/flowtimer",
+      "type": "Chrome扩展"
+    },
+    {
+      "name": "Edge Add-ons",
+      "url": "https://microsoftedge.microsoft.com/addons/search/flowtimer",
+      "type": "Edge扩展"
+    },
+    {
+      "name": "Firefox Add-ons",
+      "url": "https://addons.mozilla.org/firefox/addon/flowtimer",
+      "type": "Firefox插件"
+    },
+    {
+      "name": "GitHub Releases",
+      "url": "https://github.com/GeekAtTeam/FlowTimer/releases",
+      "type": "源码下载"
+    }
+  ],
+  "tags": ["浏览器插件", "番茄钟", "时间管理", "专注力", "生产力工具", "番茄工作法", "任务管理", "开源", "Chrome", "Firefox", "Edge"],
+  "status": "开发中",
+  "launchDate": "2024-12-15",
+  "version": "v0.8.0",
+  "downloadCount": "即将上线",
+  "rating": "即将上线",
+  "reviews": [
+    {
+      "user": "程序员小张",
+      "rating": 5,
+      "comment": "作为程序员，经常需要长时间专注编程，这个番茄钟插件帮我建立了很好的工作节奏，效率明显提升了！"
+    },
+    {
+      "user": "学生小李",
+      "rating": 5,
+      "comment": "学习时很容易分心，用了FlowTimer后能够更好地专注学习，界面简洁，功能实用，强烈推荐！"
+    },
+    {
+      "user": "自由职业者小王",
+      "rating": 4,
+      "comment": "在家办公容易拖延，这个番茄钟帮我管理时间，工作更有条理了，期待正式版上线。"
+    }
+  ],
+  "screenshots": [
+    "img/products/flowtimer-screenshot-1.png",
+    "img/products/flowtimer-screenshot-2.png",
+    "img/products/flowtimer-screenshot-3.png"
+  ]
+}
