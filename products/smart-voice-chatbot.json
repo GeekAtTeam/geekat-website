@@ -4,7 +4,7 @@
   "category": "智能硬件",
   "summary": "基于深度学习的智能语音聊天机器人，支持多轮对话、情感分析和个性化推荐。适用于客服、教育、娱乐等多个场景。",
   "description": "基于深度学习的智能语音聊天机器人，支持多轮对话、情感分析和个性化推荐。适用于客服、教育、娱乐等多个场景。",
-  "image": "/img/products/smart-voice-chatbot.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/smart-voice-chatbot.webp",
   "price": "¥299起",
   "status": "已发布",
   "features": [

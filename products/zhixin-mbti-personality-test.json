@@ -5,8 +5,8 @@
   "description": "专业的 MBTI 人格类型测试微信小程序，提供多套测试题和 AI 分析功能。",
   "category": "微信小程序",
   "price": "免费",
-  "image": "img/products/zhixin-mbti-banner.webp",
-  "qrcode": "img/products/Zhixin_MBTI_weapp_qrcode_256.jpg",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/zhixin-mbti-banner.webp",
+  "qrcode": "https://geekat.oss-cn-guangzhou.aliyuncs.com/Zhixin_MBTI_weapp_qrcode_256.jpg",
   "features": [
     "多套MBTI测试题（快速版、经典版、标准版）",
     "准确的测试结果分析",

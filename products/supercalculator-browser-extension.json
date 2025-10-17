@@ -5,7 +5,7 @@
   "description": "SuperCalculator 是一款功能强大的浏览器插件，提供完整的计算和换算解决方案。计算功能包括基础四则运算和高级科学计算，换算功能涵盖单位换算、房贷计算、汇率换算、BMI计算等多种实用工具，满足日常工作和学习中的各种计算需求。",
   "category": "浏览器插件",
   "price": "免费",
-  "image": "img/products/supercalculator-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/supercalculator-banner.webp",
   "qrcode": "",
   "features": [
     "基础四则运算计算器",

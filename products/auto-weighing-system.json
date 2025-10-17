@@ -4,7 +4,7 @@
   "category": "物联网系统",
   "summary": "集成AI视觉识别的高精度自动称重系统，支持多种货物类型识别，实现无人值守的全自动化称重流程。",
   "description": "集成AI视觉识别的高精度自动称重系统，支持多种货物类型识别，实现无人值守的全自动化称重流程。",
-  "image": "/img/products/auto-weighing-system.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/auto-weighing-system.webp",
   "price": "¥4999起",
   "status": "已发布",
   "features": [

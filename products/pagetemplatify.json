@@ -5,7 +5,7 @@
   "description": "简单灵活的静态 HTML 页面生成工具，基于 JSON 配置和 Jinja2 模板引擎，支持多主题多模板，适合企业官网、SaaS 平台、电商平台等场景。",
   "category": "开源软件",
   "price": "免费",
-  "image": "img/products/pagetemplatify-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/pagetemplatify-banner.webp",
   "qrcode": "",
   "features": [
     "配置驱动开发，只需编辑 JSON 配置文件",
