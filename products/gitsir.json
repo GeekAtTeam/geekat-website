@@ -5,7 +5,7 @@
   "description": "极思开源（gitsir.com）是一个面向开发者的开源软件供应链智能管理平台，专注于为开发者提供精准的开源项目选型指南和一键式SBOM生成与安全监控服务。平台致力于让软件供应链风险可视、可控、可追溯，通过深度洞察、安全可控、极简体验三大核心理念，为开发团队提供全方位的开源软件供应链安全保障。支持项目健康度评估、依赖关系分析、漏洞预警、许可证合规检查等功能，帮助企业构建安全可控的软件开发环境。",
   "category": "网站平台",
   "price": "免费试用",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/gitsir-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/gitsir-banner.webp",
   "qrcode": "",
   "features": [
     "项目健康度雷达评估",

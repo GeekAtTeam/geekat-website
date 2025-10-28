@@ -5,7 +5,7 @@
   "description": "FlowTimer 是一款专为提升注意力和生产力而设计的番茄钟浏览器插件。基于番茄工作法原理，通过25分钟专注工作+5分钟休息的循环模式，帮助用户建立高效的工作节奏。界面简洁美观，功能轻量实用，支持自定义时间设置、任务管理、统计分析和多种提醒方式，是提升工作效率的必备工具。",
   "category": "浏览器插件",
   "price": "免费",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/flowtimer-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/flowtimer-banner.webp",
   "qrcode": "",
   "features": [
     "标准番茄钟计时器（25分钟工作+5分钟休息）",

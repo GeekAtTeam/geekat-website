@@ -5,7 +5,7 @@
   "category": "智能硬件",
   "price": "¥199起",
   "status": "已发布",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/pumpkin-pi.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/pumpkin-pi.webp",
   "features": [
     "STM32MP157C主控器，双核ARM Cortex-A7 + 单核Cortex-M4",
     "1GB DDR3L内存，8GB eMMC存储",

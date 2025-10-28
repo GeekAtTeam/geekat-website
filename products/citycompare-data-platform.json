@@ -5,7 +5,7 @@
   "description": "城市对比（citycompare.net）是一个专业的城市地理数据服务平台，致力于收集和整理全球各城市的地理、人口、经济、社会等权威数据。平台提供准确、权威的城市地理数据，结合有趣的人文故事，为用户提供全面的城市信息对比分析。部分数据免费访问，每日限制访问次数，开通会员可解锁所有限制。主要服务于城市地理爱好者、学术研究人员、民间投资者等用户群体。",
   "category": "网站平台",
   "price": "免费查询 + 会员服务",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/citycompare-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/citycompare-banner.webp",
   "qrcode": "",
   "features": [
     "全球城市地理数据收集",

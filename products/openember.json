@@ -5,7 +5,7 @@
   "description": "OpenEmber是一个专用于嵌入式Linux系统的应用程序开发框架。框架包含设备端应用程序常见的模块，包括消息通信、设备管理、数据采集、协议解析、状态监控、配置管理、日志记录、远程升级、图形界面等功能模块。模块之间采用消息通信机制进行同步，天生支持分布式部署，也就是说，功能模块可以部署在不同的硬件平台（包括异构多核平台）。项目默认实现了Linux系统监控功能，可通过Web查看系统状态。",
   "category": "开源软件",
   "price": "开源免费",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/openember-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/openember-banner.webp",
   "qrcode": "",
   "features": [
     "消息通信服务（MSG）",

@@ -5,7 +5,7 @@
   "description": "一款简单、好用、免费的浏览器插件，帮助用户从网页中快速提取颜色信息，支持多种颜色格式和便捷的操作方式。",
   "category": "浏览器插件",
   "price": "免费",
-  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/getcolor-banner.webp",
+  "image": "https://geekat.oss-cn-guangzhou.aliyuncs.com/images/getcolor-banner.webp",
   "qrcode": "",
   "features": [
     "一键提取网页元素颜色",
