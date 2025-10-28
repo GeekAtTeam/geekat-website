@@ -4,6 +4,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
+const beian = '粤ICP备2025413624号-2';
+
 const config: Config = {
   title: '极客艾特 Geek@',
   tagline: '让智能技术回归价值本质',
@@ -186,7 +188,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 广州极客艾特计算机系统有限公司`,
+      copyright: `Copyright © ${new Date().getFullYear()} 广州极客艾特计算机系统有限公司 &nbsp;&nbsp; 备案号：<a href="https://beian.miit.gov.cn/" target="_blank">${beian}</a>`,
     },
     prism: {
       theme: prismThemes.github,
