@@ -4,7 +4,10 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
-const beian = '粤ICP备2025413624号-2';
+const icp_beian = '粤ICP备2025413624号-2';
+const icp_beian_url = 'https://beian.miit.gov.cn/';
+const ga_beian = '粤公网安备44011302005006号';
+const ga_beian_url = 'https://beian.mps.gov.cn/#/query/webSearch?code=44011302005006';
 
 const config: Config = {
   title: '极客艾特 Geek@',
@@ -188,7 +191,20 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 广州极客艾特计算机系统有限公司 &nbsp;&nbsp; 备案号：<a href="https://beian.miit.gov.cn/" target="_blank">${beian}</a>`,
+      copyright: `
+        <div style="text-align: center; line-height: 1.8;">
+          <div>Copyright © ${new Date().getFullYear()} 广州极客艾特计算机系统有限公司</div>
+          <div style="margin-top: 0.5rem; font-size: 0.95em;">
+            <a href="https://beian.miit.gov.cn/" target="_blank" style="color: inherit; text-decoration: none; margin-right: 1.5rem;">
+              ${icp_beian}
+            </a>
+            <a href="https://beian.mps.gov.cn/#/query/webSearch?code=44011302005006" rel="noreferrer" target="_blank" style="color: inherit; text-decoration: none; display: inline-flex; align-items: center; gap: 0.3rem;">
+              <img src="/img/ga_beian_logo.png" alt="公安备案" style="width: 16px; height: 16px; vertical-align: middle;" />
+              ${ga_beian}
+            </a>
+          </div>
+        </div>
+      `,
     },
     prism: {
       theme: prismThemes.github,
